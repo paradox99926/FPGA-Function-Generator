@@ -12,34 +12,25 @@
 #include <stdlib.h>
 #include "lvgl.h"
 #include "custom.h"
-
-/*********************
- *      DEFINES
- *********************/
+// #include "customUSART.h"
 
 /**********************
  *      TYPEDEFS
  **********************/
-
-/**********************
- *  STATIC PROTOTYPES
- **********************/
-
-/**********************
- *  STATIC VARIABLES
- **********************/
-
 typedef enum
 {
     UNIT_HZ,
     UNIT_KHZ,
     UNIT_MHZ,
 } unit_hz_t;
+/*********************
+ *      DEFINES
+ *********************/
+
 static unit_hz_t current_Sin = UNIT_HZ;
 static unit_hz_t current_Squ = UNIT_HZ;
 static unit_hz_t current_Tri = UNIT_HZ;
 
-/* -------------------------------------------------------------------------- */
 static lv_point_t screen_Cus_Line_buf[] = {
     {0, 100},
     {10, 100},
@@ -51,9 +42,113 @@ static lv_point_t screen_Cus_Line_buf[] = {
     {320, 100},
 };
 
+/**********************
+ *  STATIC PROTOTYPES
+ **********************/
+
+/**********************
+ *  STATIC VARIABLES
+ **********************/
+
+/* -------------------------------------------------------------------------- */
+
 /* -------------------------------------------------------------------------- */
 
 // Create a demo application
+void Set_State()
+{
+    if (Btn_Sel.Sin_Channel_1 == 0)
+        lv_btn_set_state(guider_ui.screen_Sin_Channel_1_btn, LV_STATE_DEFAULT);
+    if (Btn_Sel.Sin_Channel_2 == 0)
+        lv_btn_set_state(guider_ui.screen_Sin_Channel_2_btn, LV_STATE_DEFAULT);
+    if (Btn_Sel.Squ_Channel_1 == 0)
+        lv_btn_set_state(guider_ui.screen_Squ_Channel_1_btn, LV_STATE_DEFAULT);
+    if (Btn_Sel.Squ_Channel_2 == 0)
+        lv_btn_set_state(guider_ui.screen_Squ_Channel_2_btn, LV_STATE_DEFAULT);
+    if (Btn_Sel.Tri_Channel_1 == 0)
+        lv_btn_set_state(guider_ui.screen_Tri_Channel_1_btn, LV_STATE_DEFAULT);
+    if (Btn_Sel.Tri_Channel_2 == 0)
+        lv_btn_set_state(guider_ui.screen_Tri_Channel_2_btn, LV_STATE_DEFAULT);
+}
+
+static void Sin_Channel_1_btn_event_handler(lv_obj_t *channel, lv_event_t event)
+{
+    if (event == LV_STATE_PRESSED)
+    {
+        Btn_Sel.Sin_Channel_1 = ~Btn_Sel.Sin_Channel_1;
+        if (Btn_Sel.Sin_Channel_1)
+        {
+            Btn_Sel.Squ_Channel_1 = 0;
+            Btn_Sel.Tri_Channel_1 = 0;
+        }
+        Set_State();
+    }
+}
+static void Sin_Channel_2_btn_event_handler(lv_obj_t *channel, lv_event_t event)
+{
+    if (event == LV_STATE_PRESSED)
+    {
+        Btn_Sel.Sin_Channel_2 = ~Btn_Sel.Sin_Channel_2;
+        if (Btn_Sel.Sin_Channel_2)
+        {
+            Btn_Sel.Squ_Channel_2 = 0;
+            Btn_Sel.Tri_Channel_2 = 0;
+        }
+        Set_State();
+    }
+}
+static void Squ_Channel_1_btn_event_handler(lv_obj_t *channel, lv_event_t event)
+{
+    if (event == LV_STATE_PRESSED)
+    {
+        Btn_Sel.Squ_Channel_1 = ~Btn_Sel.Squ_Channel_1;
+        if (Btn_Sel.Squ_Channel_1)
+        {
+            Btn_Sel.Sin_Channel_1 = 0;
+            Btn_Sel.Tri_Channel_1 = 0;
+        }
+        Set_State();
+    }
+}
+static void Squ_Channel_2_btn_event_handler(lv_obj_t *channel, lv_event_t event)
+{
+    if (event == LV_STATE_PRESSED)
+    {
+        Btn_Sel.Squ_Channel_2 = ~Btn_Sel.Squ_Channel_2;
+        if (Btn_Sel.Squ_Channel_2)
+        {
+            Btn_Sel.Sin_Channel_2 = 0;
+            Btn_Sel.Tri_Channel_2 = 0;
+        }
+        Set_State();
+    }
+}
+static void Tri_Channel_1_btn_event_handler(lv_obj_t *channel, lv_event_t event)
+{
+    if (event == LV_STATE_PRESSED)
+    {
+        Btn_Sel.Tri_Channel_1 = ~Btn_Sel.Tri_Channel_1;
+        if (Btn_Sel.Tri_Channel_1)
+        {
+            Btn_Sel.Sin_Channel_1 = 0;
+            Btn_Sel.Squ_Channel_1 = 0;
+        }
+        Set_State();
+    }
+}
+static void Tri_Channel_2_btn_event_handler(lv_obj_t *channel, lv_event_t event)
+{
+    if (event == LV_STATE_PRESSED)
+    {
+        Btn_Sel.Tri_Channel_2 = ~Btn_Sel.Tri_Channel_2;
+        if (Btn_Sel.Tri_Channel_2)
+        {
+            Btn_Sel.Sin_Channel_2 = 0;
+            Btn_Sel.Squ_Channel_2 = 0;
+        }
+        Set_State();
+    }
+}
 
 static void Sin_Aword_Slider_event_handler(lv_obj_t *slider, lv_event_t event)
 {
@@ -62,6 +157,8 @@ static void Sin_Aword_Slider_event_handler(lv_obj_t *slider, lv_event_t event)
     if (event == LV_EVENT_VALUE_CHANGED)
     {
         lv_label_set_text_fmt(guider_ui.screen_Sin_Aword_Label, "Ampl : %d", (value - 5000));
+        // guider_user.pointer_Sin_Aword_Slider->value = value - 5000;
+        // guider_user.pointer_Sin_Aword_Slider->State = CHANGE;
     }
 }
 
@@ -292,10 +389,24 @@ static void scroll_event_cb(lv_obj_t *obj, lv_event_t event)
 
 void custom_init(lv_ui *ui)
 {
+    // customUSART_init(ui, guider_user);
+    // /*tab handler*/
+    // lv_obj_set_event_cb(ui->screen_Function_Set_tab_1, Sin_event_handler);
+    // lv_obj_set_event_cb(ui->screen_Function_Set_tab_2, Squ_event_handler);
+    // lv_obj_set_event_cb(ui->screen_Function_Set_tab_3, Tri_event_handler);
+    // lv_obj_set_event_cb(ui->screen_Function_Set_tab_4, Tri_event_handler);
+    /*channel handler*/
+    lv_obj_set_event_cb(ui->screen_Sin_Channel_1_btn, Sin_Channel_1_btn_event_handler);
+    lv_obj_set_event_cb(ui->screen_Sin_Channel_2_btn, Sin_Channel_2_btn_event_handler);
+    lv_obj_set_event_cb(ui->screen_Squ_Channel_1_btn, Squ_Channel_1_btn_event_handler);
+    lv_obj_set_event_cb(ui->screen_Squ_Channel_2_btn, Squ_Channel_2_btn_event_handler);
+    lv_obj_set_event_cb(ui->screen_Tri_Channel_1_btn, Tri_Channel_1_btn_event_handler);
+    lv_obj_set_event_cb(ui->screen_Tri_Channel_2_btn, Tri_Channel_2_btn_event_handler);
+    /*btn handler*/
     lv_obj_set_event_cb(ui->screen_Sin_Hz_btn, Sin_Hz_btn_event_handler);
     lv_obj_set_event_cb(ui->screen_Squ_Hz_btn, Squ_Hz_btn_event_handler);
     lv_obj_set_event_cb(ui->screen_Tri_Hz_btn, Tri_Hz_btn_event_handler);
-    /* Add your codes here */
+    /* slider handler */
     lv_obj_set_event_cb(ui->screen_Sin_Aword_Slider, Sin_Aword_Slider_event_handler);
     lv_obj_set_event_cb(ui->screen_Sin_Fword_Slider, Sin_Fword_Slider_event_handler);
     lv_obj_set_event_cb(ui->screen_Sin_Pword_Slider, Sin_Pword_Slider_event_handler);
@@ -305,6 +416,6 @@ void custom_init(lv_ui *ui)
     lv_obj_set_event_cb(ui->screen_Tri_Aword_Slider, Tri_Aword_Slider_event_handler);
     lv_obj_set_event_cb(ui->screen_Tri_Fword_Slider, Tri_Fword_Slider_event_handler);
     lv_obj_set_event_cb(ui->screen_Tri_Pword_Slider, Tri_Pword_Slider_event_handler);
-    /* -------------------------------------------------------------------------- */
+    /* line handler */
     lv_obj_set_event_cb(ui->screen_Function_Set_tab_4, scroll_event_cb);
 }

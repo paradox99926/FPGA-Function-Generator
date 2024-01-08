@@ -17,6 +17,17 @@ extern "C"
 
 #include "../generated/gui_guider.h"
 
+    static struct
+    {
+        bool Sin_Channel_1;
+        bool Sin_Channel_2;
+        bool Squ_Channel_1;
+        bool Squ_Channel_2;
+        bool Tri_Channel_1;
+        bool Tri_Channel_2;
+    } Btn_Sel = {0, 0, 0, 0, 0, 0};
+
+    void Set_State();
     void custom_init(lv_ui *ui);
 
 #ifdef __cplusplus
