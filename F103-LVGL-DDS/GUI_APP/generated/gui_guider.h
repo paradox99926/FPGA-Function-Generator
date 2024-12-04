@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 NXP
+ * Copyright 2024 NXP
  * NXP Confidential and Proprietary. This software is owned or controlled by NXP and may only be used strictly in
  * accordance with the applicable license terms. By expressly accepting such terms or by downloading, installing,
  * activating and/or otherwise using the software, you are agreeing that you have read, and that you agree to
@@ -27,6 +27,7 @@ extern "C"
 		lv_obj_t *screen_Function_Set_tab_2;
 		lv_obj_t *screen_Function_Set_tab_3;
 		lv_obj_t *screen_Function_Set_tab_4;
+		lv_obj_t *screen_Function_Set_tab_5;
 		lv_obj_t *screen_FG_SIN_IMG;
 		lv_obj_t *screen_Sin_Channel_2_btn;
 		lv_obj_t *screen_Sin_Channel_2_btn_label;
@@ -72,6 +73,21 @@ extern "C"
 		lv_obj_t *screen_Tri_Degree_unit;
 		lv_obj_t *screen_Tri_Hz_btn;
 		lv_obj_t *screen_Tri_Hz_btn_label;
+		lv_obj_t *screen_FG_CUS_IMG;
+		lv_obj_t *screen_Cus_Channel_1_btn;
+		lv_obj_t *screen_Cus_Channel_1_btn_label;
+		lv_obj_t *screen_Cus_Channel_2_btn;
+		lv_obj_t *screen_Cus_Channel_2_btn_label;
+		lv_obj_t *screen_Cus_Pword_Slider;
+		lv_obj_t *screen_Cus_Fword_Slider;
+		lv_obj_t *screen_Cus_Aword_Slider;
+		lv_obj_t *screen_Cus_Fword_Label;
+		lv_obj_t *screen_Cus_Pword_Label;
+		lv_obj_t *screen_Cus_Aword_Label;
+		lv_obj_t *screen_Cus_MV_unit;
+		lv_obj_t *screen_Cus_Degree_unit;
+		lv_obj_t *screen_Cus_Hz_btn;
+		lv_obj_t *screen_Cus_Hz_btn_label;
 		lv_obj_t *screen_Cus_Line;
 		lv_obj_t *screen_Cus_Label;
 		lv_obj_t *screen_Coordinate_RetrievalX;
@@ -86,6 +102,7 @@ extern "C"
 	LV_IMG_DECLARE(_FG_SIN_alpha_102x119);
 	LV_IMG_DECLARE(_FG_SQU_alpha_110x139);
 	LV_IMG_DECLARE(_FG_TRI_alpha_108x149);
+	LV_IMG_DECLARE(_FG_CUS_alpha_108x149);
 
 	LV_FONT_DECLARE(lv_font_montserratMedium_15)
 	LV_FONT_DECLARE(lv_font_montserratMedium_24)

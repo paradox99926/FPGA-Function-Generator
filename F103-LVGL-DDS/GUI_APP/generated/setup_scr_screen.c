@@ -155,21 +155,19 @@ void setup_scr_screen(lv_ui *ui)
 	lv_obj_add_style(ui->screen_Sin_Channel_2_btn, LV_BTN_PART_MAIN, &style_screen_Sin_Channel_2_btn_main_default);
 
 	// Set style for screen_Sin_Channel_2_btn. Part: LV_BTN_PART_MAIN, State: LV_STATE_PRESSED
-	if (Btn_Sel.Sin_Channel_2)
-	{
-		static lv_style_t style_screen_Sin_Channel_2_btn_main_pressed;
-		lv_style_reset(&style_screen_Sin_Channel_2_btn_main_pressed);
-		lv_style_set_text_color(&style_screen_Sin_Channel_2_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0x000000));
-		lv_style_set_text_font(&style_screen_Sin_Channel_2_btn_main_pressed, LV_STATE_PRESSED, &lv_font_montserratMedium_12);
-		lv_style_set_bg_opa(&style_screen_Sin_Channel_2_btn_main_pressed, LV_STATE_PRESSED, 255);
-		lv_style_set_bg_color(&style_screen_Sin_Channel_2_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0xD0F6FF));
-		lv_style_set_border_width(&style_screen_Sin_Channel_2_btn_main_pressed, LV_STATE_PRESSED, 2);
-		lv_style_set_border_opa(&style_screen_Sin_Channel_2_btn_main_pressed, LV_STATE_PRESSED, 255);
-		lv_style_set_border_color(&style_screen_Sin_Channel_2_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0x01a2b1));
-		lv_style_set_radius(&style_screen_Sin_Channel_2_btn_main_pressed, LV_STATE_PRESSED, 4);
-		lv_style_set_shadow_width(&style_screen_Sin_Channel_2_btn_main_pressed, LV_STATE_PRESSED, 0);
-		lv_obj_add_style(ui->screen_Sin_Channel_2_btn, LV_BTN_PART_MAIN, &style_screen_Sin_Channel_2_btn_main_pressed);
-	}
+	static lv_style_t style_screen_Sin_Channel_2_btn_main_pressed;
+	lv_style_reset(&style_screen_Sin_Channel_2_btn_main_pressed);
+	lv_style_set_text_color(&style_screen_Sin_Channel_2_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0x000000));
+	lv_style_set_text_font(&style_screen_Sin_Channel_2_btn_main_pressed, LV_STATE_PRESSED, &lv_font_montserratMedium_12);
+	lv_style_set_bg_opa(&style_screen_Sin_Channel_2_btn_main_pressed, LV_STATE_PRESSED, 255);
+	lv_style_set_bg_color(&style_screen_Sin_Channel_2_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0xD0F6FF));
+	lv_style_set_border_width(&style_screen_Sin_Channel_2_btn_main_pressed, LV_STATE_PRESSED, 2);
+	lv_style_set_border_opa(&style_screen_Sin_Channel_2_btn_main_pressed, LV_STATE_PRESSED, 255);
+	lv_style_set_border_color(&style_screen_Sin_Channel_2_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0x01a2b1));
+	lv_style_set_radius(&style_screen_Sin_Channel_2_btn_main_pressed, LV_STATE_PRESSED, 4);
+	lv_style_set_shadow_width(&style_screen_Sin_Channel_2_btn_main_pressed, LV_STATE_PRESSED, 0);
+	lv_obj_add_style(ui->screen_Sin_Channel_2_btn, LV_BTN_PART_MAIN, &style_screen_Sin_Channel_2_btn_main_pressed);
+
 	// Widget: screen_Sin_Channel_1_btn
 	ui->screen_Sin_Channel_1_btn = lv_btn_create(ui->screen_Function_Set_tab_1, NULL);
 	lv_btn_set_checkable(ui->screen_Sin_Channel_1_btn, true);
@@ -194,21 +192,19 @@ void setup_scr_screen(lv_ui *ui)
 	lv_obj_add_style(ui->screen_Sin_Channel_1_btn, LV_BTN_PART_MAIN, &style_screen_Sin_Channel_1_btn_main_default);
 
 	// Set style for screen_Sin_Channel_1_btn. Part: LV_BTN_PART_MAIN, State: LV_STATE_PRESSED
-	if (Btn_Sel.Sin_Channel_1)
-	{
-		static lv_style_t style_screen_Sin_Channel_1_btn_main_pressed;
-		lv_style_reset(&style_screen_Sin_Channel_1_btn_main_pressed);
-		lv_style_set_text_color(&style_screen_Sin_Channel_1_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0x000000));
-		lv_style_set_text_font(&style_screen_Sin_Channel_1_btn_main_pressed, LV_STATE_PRESSED, &lv_font_montserratMedium_12);
-		lv_style_set_bg_opa(&style_screen_Sin_Channel_1_btn_main_pressed, LV_STATE_PRESSED, 255);
-		lv_style_set_bg_color(&style_screen_Sin_Channel_1_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0xd0f6ff));
-		lv_style_set_border_width(&style_screen_Sin_Channel_1_btn_main_pressed, LV_STATE_PRESSED, 2);
-		lv_style_set_border_opa(&style_screen_Sin_Channel_1_btn_main_pressed, LV_STATE_PRESSED, 255);
-		lv_style_set_border_color(&style_screen_Sin_Channel_1_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0x01a2b1));
-		lv_style_set_radius(&style_screen_Sin_Channel_1_btn_main_pressed, LV_STATE_PRESSED, 4);
-		lv_style_set_shadow_width(&style_screen_Sin_Channel_1_btn_main_pressed, LV_STATE_PRESSED, 0);
-		lv_obj_add_style(ui->screen_Sin_Channel_1_btn, LV_BTN_PART_MAIN, &style_screen_Sin_Channel_1_btn_main_pressed);
-	}
+	static lv_style_t style_screen_Sin_Channel_1_btn_main_pressed;
+	lv_style_reset(&style_screen_Sin_Channel_1_btn_main_pressed);
+	lv_style_set_text_color(&style_screen_Sin_Channel_1_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0x000000));
+	lv_style_set_text_font(&style_screen_Sin_Channel_1_btn_main_pressed, LV_STATE_PRESSED, &lv_font_montserratMedium_12);
+	lv_style_set_bg_opa(&style_screen_Sin_Channel_1_btn_main_pressed, LV_STATE_PRESSED, 255);
+	lv_style_set_bg_color(&style_screen_Sin_Channel_1_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0xd0f6ff));
+	lv_style_set_border_width(&style_screen_Sin_Channel_1_btn_main_pressed, LV_STATE_PRESSED, 2);
+	lv_style_set_border_opa(&style_screen_Sin_Channel_1_btn_main_pressed, LV_STATE_PRESSED, 255);
+	lv_style_set_border_color(&style_screen_Sin_Channel_1_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0x01a2b1));
+	lv_style_set_radius(&style_screen_Sin_Channel_1_btn_main_pressed, LV_STATE_PRESSED, 4);
+	lv_style_set_shadow_width(&style_screen_Sin_Channel_1_btn_main_pressed, LV_STATE_PRESSED, 0);
+	lv_obj_add_style(ui->screen_Sin_Channel_1_btn, LV_BTN_PART_MAIN, &style_screen_Sin_Channel_1_btn_main_pressed);
+
 	// Widget: screen_Sin_Pword_Slider
 	ui->screen_Sin_Pword_Slider = lv_slider_create(ui->screen_Function_Set_tab_1, NULL);
 	lv_slider_set_range(ui->screen_Sin_Pword_Slider, 0, 360);
@@ -485,21 +481,19 @@ void setup_scr_screen(lv_ui *ui)
 	lv_obj_add_style(ui->screen_Squ_Channel_2_btn, LV_BTN_PART_MAIN, &style_screen_Squ_Channel_2_btn_main_default);
 
 	// Set style for screen_Squ_Channel_2_btn. Part: LV_BTN_PART_MAIN, State: LV_STATE_PRESSED
-	if (Btn_Sel.Squ_Channel_2)
-	{
-		static lv_style_t style_screen_Squ_Channel_2_btn_main_pressed;
-		lv_style_reset(&style_screen_Squ_Channel_2_btn_main_pressed);
-		lv_style_set_text_color(&style_screen_Squ_Channel_2_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0x000000));
-		lv_style_set_text_font(&style_screen_Squ_Channel_2_btn_main_pressed, LV_STATE_PRESSED, &lv_font_montserratMedium_12);
-		lv_style_set_bg_opa(&style_screen_Squ_Channel_2_btn_main_pressed, LV_STATE_PRESSED, 255);
-		lv_style_set_bg_color(&style_screen_Squ_Channel_2_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0xD0F6FF));
-		lv_style_set_border_width(&style_screen_Squ_Channel_2_btn_main_pressed, LV_STATE_PRESSED, 2);
-		lv_style_set_border_opa(&style_screen_Squ_Channel_2_btn_main_pressed, LV_STATE_PRESSED, 255);
-		lv_style_set_border_color(&style_screen_Squ_Channel_2_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0x01a2b1));
-		lv_style_set_radius(&style_screen_Squ_Channel_2_btn_main_pressed, LV_STATE_PRESSED, 4);
-		lv_style_set_shadow_width(&style_screen_Squ_Channel_2_btn_main_pressed, LV_STATE_PRESSED, 0);
-		lv_obj_add_style(ui->screen_Squ_Channel_2_btn, LV_BTN_PART_MAIN, &style_screen_Squ_Channel_2_btn_main_pressed);
-	}
+	static lv_style_t style_screen_Squ_Channel_2_btn_main_pressed;
+	lv_style_reset(&style_screen_Squ_Channel_2_btn_main_pressed);
+	lv_style_set_text_color(&style_screen_Squ_Channel_2_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0x000000));
+	lv_style_set_text_font(&style_screen_Squ_Channel_2_btn_main_pressed, LV_STATE_PRESSED, &lv_font_montserratMedium_12);
+	lv_style_set_bg_opa(&style_screen_Squ_Channel_2_btn_main_pressed, LV_STATE_PRESSED, 255);
+	lv_style_set_bg_color(&style_screen_Squ_Channel_2_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0xD0F6FF));
+	lv_style_set_border_width(&style_screen_Squ_Channel_2_btn_main_pressed, LV_STATE_PRESSED, 2);
+	lv_style_set_border_opa(&style_screen_Squ_Channel_2_btn_main_pressed, LV_STATE_PRESSED, 255);
+	lv_style_set_border_color(&style_screen_Squ_Channel_2_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0x01a2b1));
+	lv_style_set_radius(&style_screen_Squ_Channel_2_btn_main_pressed, LV_STATE_PRESSED, 4);
+	lv_style_set_shadow_width(&style_screen_Squ_Channel_2_btn_main_pressed, LV_STATE_PRESSED, 0);
+	lv_obj_add_style(ui->screen_Squ_Channel_2_btn, LV_BTN_PART_MAIN, &style_screen_Squ_Channel_2_btn_main_pressed);
+
 	// Widget: screen_Squ_Channel_1_btn
 	ui->screen_Squ_Channel_1_btn = lv_btn_create(ui->screen_Function_Set_tab_2, NULL);
 	lv_btn_set_checkable(ui->screen_Squ_Channel_1_btn, true);
@@ -524,21 +518,19 @@ void setup_scr_screen(lv_ui *ui)
 	lv_obj_add_style(ui->screen_Squ_Channel_1_btn, LV_BTN_PART_MAIN, &style_screen_Squ_Channel_1_btn_main_default);
 
 	// Set style for screen_Squ_Channel_1_btn. Part: LV_BTN_PART_MAIN, State: LV_STATE_PRESSED
-	if (Btn_Sel.Squ_Channel_1)
-	{
-		static lv_style_t style_screen_Squ_Channel_1_btn_main_pressed;
-		lv_style_reset(&style_screen_Squ_Channel_1_btn_main_pressed);
-		lv_style_set_text_color(&style_screen_Squ_Channel_1_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0x000000));
-		lv_style_set_text_font(&style_screen_Squ_Channel_1_btn_main_pressed, LV_STATE_PRESSED, &lv_font_montserratMedium_12);
-		lv_style_set_bg_opa(&style_screen_Squ_Channel_1_btn_main_pressed, LV_STATE_PRESSED, 255);
-		lv_style_set_bg_color(&style_screen_Squ_Channel_1_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0xD0F6FF));
-		lv_style_set_border_width(&style_screen_Squ_Channel_1_btn_main_pressed, LV_STATE_PRESSED, 2);
-		lv_style_set_border_opa(&style_screen_Squ_Channel_1_btn_main_pressed, LV_STATE_PRESSED, 255);
-		lv_style_set_border_color(&style_screen_Squ_Channel_1_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0x01a2b1));
-		lv_style_set_radius(&style_screen_Squ_Channel_1_btn_main_pressed, LV_STATE_PRESSED, 4);
-		lv_style_set_shadow_width(&style_screen_Squ_Channel_1_btn_main_pressed, LV_STATE_PRESSED, 0);
-		lv_obj_add_style(ui->screen_Squ_Channel_1_btn, LV_BTN_PART_MAIN, &style_screen_Squ_Channel_1_btn_main_pressed);
-	}
+	static lv_style_t style_screen_Squ_Channel_1_btn_main_pressed;
+	lv_style_reset(&style_screen_Squ_Channel_1_btn_main_pressed);
+	lv_style_set_text_color(&style_screen_Squ_Channel_1_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0x000000));
+	lv_style_set_text_font(&style_screen_Squ_Channel_1_btn_main_pressed, LV_STATE_PRESSED, &lv_font_montserratMedium_12);
+	lv_style_set_bg_opa(&style_screen_Squ_Channel_1_btn_main_pressed, LV_STATE_PRESSED, 255);
+	lv_style_set_bg_color(&style_screen_Squ_Channel_1_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0xD0F6FF));
+	lv_style_set_border_width(&style_screen_Squ_Channel_1_btn_main_pressed, LV_STATE_PRESSED, 2);
+	lv_style_set_border_opa(&style_screen_Squ_Channel_1_btn_main_pressed, LV_STATE_PRESSED, 255);
+	lv_style_set_border_color(&style_screen_Squ_Channel_1_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0x01a2b1));
+	lv_style_set_radius(&style_screen_Squ_Channel_1_btn_main_pressed, LV_STATE_PRESSED, 4);
+	lv_style_set_shadow_width(&style_screen_Squ_Channel_1_btn_main_pressed, LV_STATE_PRESSED, 0);
+	lv_obj_add_style(ui->screen_Squ_Channel_1_btn, LV_BTN_PART_MAIN, &style_screen_Squ_Channel_1_btn_main_pressed);
+
 	// Widget: screen_Squ_Pword_Slider
 	ui->screen_Squ_Pword_Slider = lv_slider_create(ui->screen_Function_Set_tab_2, NULL);
 	lv_slider_set_range(ui->screen_Squ_Pword_Slider, 0, 360);
@@ -815,21 +807,18 @@ void setup_scr_screen(lv_ui *ui)
 	lv_obj_add_style(ui->screen_Tri_Channel_2_btn, LV_BTN_PART_MAIN, &style_screen_Tri_Channel_2_btn_main_default);
 
 	// Set style for screen_Tri_Channel_2_btn. Part: LV_BTN_PART_MAIN, State: LV_STATE_PRESSED
-	if (Btn_Sel.Tri_Channel_2)
-	{
-		static lv_style_t style_screen_Tri_Channel_2_btn_main_pressed;
-		lv_style_reset(&style_screen_Tri_Channel_2_btn_main_pressed);
-		lv_style_set_text_color(&style_screen_Tri_Channel_2_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0x000000));
-		lv_style_set_text_font(&style_screen_Tri_Channel_2_btn_main_pressed, LV_STATE_PRESSED, &lv_font_montserratMedium_12);
-		lv_style_set_bg_opa(&style_screen_Tri_Channel_2_btn_main_pressed, LV_STATE_PRESSED, 255);
-		lv_style_set_bg_color(&style_screen_Tri_Channel_2_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0xD0F6FF));
-		lv_style_set_border_width(&style_screen_Tri_Channel_2_btn_main_pressed, LV_STATE_PRESSED, 2);
-		lv_style_set_border_opa(&style_screen_Tri_Channel_2_btn_main_pressed, LV_STATE_PRESSED, 255);
-		lv_style_set_border_color(&style_screen_Tri_Channel_2_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0x01a2b1));
-		lv_style_set_radius(&style_screen_Tri_Channel_2_btn_main_pressed, LV_STATE_PRESSED, 4);
-		lv_style_set_shadow_width(&style_screen_Tri_Channel_2_btn_main_pressed, LV_STATE_PRESSED, 0);
-		lv_obj_add_style(ui->screen_Tri_Channel_2_btn, LV_BTN_PART_MAIN, &style_screen_Tri_Channel_2_btn_main_pressed);
-	}
+	static lv_style_t style_screen_Tri_Channel_2_btn_main_pressed;
+	lv_style_reset(&style_screen_Tri_Channel_2_btn_main_pressed);
+	lv_style_set_text_color(&style_screen_Tri_Channel_2_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0x000000));
+	lv_style_set_text_font(&style_screen_Tri_Channel_2_btn_main_pressed, LV_STATE_PRESSED, &lv_font_montserratMedium_12);
+	lv_style_set_bg_opa(&style_screen_Tri_Channel_2_btn_main_pressed, LV_STATE_PRESSED, 255);
+	lv_style_set_bg_color(&style_screen_Tri_Channel_2_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0xD0F6FF));
+	lv_style_set_border_width(&style_screen_Tri_Channel_2_btn_main_pressed, LV_STATE_PRESSED, 2);
+	lv_style_set_border_opa(&style_screen_Tri_Channel_2_btn_main_pressed, LV_STATE_PRESSED, 255);
+	lv_style_set_border_color(&style_screen_Tri_Channel_2_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0x01a2b1));
+	lv_style_set_radius(&style_screen_Tri_Channel_2_btn_main_pressed, LV_STATE_PRESSED, 4);
+	lv_style_set_shadow_width(&style_screen_Tri_Channel_2_btn_main_pressed, LV_STATE_PRESSED, 0);
+	lv_obj_add_style(ui->screen_Tri_Channel_2_btn, LV_BTN_PART_MAIN, &style_screen_Tri_Channel_2_btn_main_pressed);
 
 	// Widget: screen_Tri_Channel_1_btn
 	ui->screen_Tri_Channel_1_btn = lv_btn_create(ui->screen_Function_Set_tab_3, NULL);
@@ -855,21 +844,19 @@ void setup_scr_screen(lv_ui *ui)
 	lv_obj_add_style(ui->screen_Tri_Channel_1_btn, LV_BTN_PART_MAIN, &style_screen_Tri_Channel_1_btn_main_default);
 
 	// Set style for screen_Tri_Channel_1_btn. Part: LV_BTN_PART_MAIN, State: LV_STATE_PRESSED
-	if (Btn_Sel.Tri_Channel_1)
-	{
-		static lv_style_t style_screen_Tri_Channel_1_btn_main_pressed;
-		lv_style_reset(&style_screen_Tri_Channel_1_btn_main_pressed);
-		lv_style_set_text_color(&style_screen_Tri_Channel_1_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0x000000));
-		lv_style_set_text_font(&style_screen_Tri_Channel_1_btn_main_pressed, LV_STATE_PRESSED, &lv_font_montserratMedium_12);
-		lv_style_set_bg_opa(&style_screen_Tri_Channel_1_btn_main_pressed, LV_STATE_PRESSED, 255);
-		lv_style_set_bg_color(&style_screen_Tri_Channel_1_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0xD0F6FF));
-		lv_style_set_border_width(&style_screen_Tri_Channel_1_btn_main_pressed, LV_STATE_PRESSED, 2);
-		lv_style_set_border_opa(&style_screen_Tri_Channel_1_btn_main_pressed, LV_STATE_PRESSED, 255);
-		lv_style_set_border_color(&style_screen_Tri_Channel_1_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0x01a2b1));
-		lv_style_set_radius(&style_screen_Tri_Channel_1_btn_main_pressed, LV_STATE_PRESSED, 4);
-		lv_style_set_shadow_width(&style_screen_Tri_Channel_1_btn_main_pressed, LV_STATE_PRESSED, 0);
-		lv_obj_add_style(ui->screen_Tri_Channel_1_btn, LV_BTN_PART_MAIN, &style_screen_Tri_Channel_1_btn_main_pressed);
-	}
+	static lv_style_t style_screen_Tri_Channel_1_btn_main_pressed;
+	lv_style_reset(&style_screen_Tri_Channel_1_btn_main_pressed);
+	lv_style_set_text_color(&style_screen_Tri_Channel_1_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0x000000));
+	lv_style_set_text_font(&style_screen_Tri_Channel_1_btn_main_pressed, LV_STATE_PRESSED, &lv_font_montserratMedium_12);
+	lv_style_set_bg_opa(&style_screen_Tri_Channel_1_btn_main_pressed, LV_STATE_PRESSED, 255);
+	lv_style_set_bg_color(&style_screen_Tri_Channel_1_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0xD0F6FF));
+	lv_style_set_border_width(&style_screen_Tri_Channel_1_btn_main_pressed, LV_STATE_PRESSED, 2);
+	lv_style_set_border_opa(&style_screen_Tri_Channel_1_btn_main_pressed, LV_STATE_PRESSED, 255);
+	lv_style_set_border_color(&style_screen_Tri_Channel_1_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0x01a2b1));
+	lv_style_set_radius(&style_screen_Tri_Channel_1_btn_main_pressed, LV_STATE_PRESSED, 4);
+	lv_style_set_shadow_width(&style_screen_Tri_Channel_1_btn_main_pressed, LV_STATE_PRESSED, 0);
+	lv_obj_add_style(ui->screen_Tri_Channel_1_btn, LV_BTN_PART_MAIN, &style_screen_Tri_Channel_1_btn_main_pressed);
+
 	// Widget: screen_Tri_Pword_Slider
 	ui->screen_Tri_Pword_Slider = lv_slider_create(ui->screen_Function_Set_tab_3, NULL);
 	lv_slider_set_range(ui->screen_Tri_Pword_Slider, 0, 360);
@@ -1107,8 +1094,334 @@ void setup_scr_screen(lv_ui *ui)
 	lv_obj_t *screen_Function_Set_tab_4_label = lv_label_create(ui->screen_Function_Set_tab_4, NULL);
 	lv_label_set_text(screen_Function_Set_tab_4_label, "");
 
+	// Widget: screen_FG_CUS_IMG
+	ui->screen_FG_CUS_IMG = lv_img_create(ui->screen_Function_Set_tab_4, NULL);
+	lv_obj_set_click(ui->screen_FG_CUS_IMG, true);
+	lv_img_set_src(ui->screen_FG_CUS_IMG, &_FG_CUS_alpha_108x149);
+	lv_img_set_pivot(ui->screen_FG_CUS_IMG, 50, 50);
+	lv_img_set_angle(ui->screen_FG_CUS_IMG, 0);
+	lv_obj_set_pos(ui->screen_FG_CUS_IMG, 10, -17);
+	lv_obj_set_size(ui->screen_FG_CUS_IMG, 108, 149);
+
+	// Set style for screen_FG_CUS_IMG. Part: LV_IMG_PART_MAIN, State: LV_STATE_DEFAULT
+	static lv_style_t style_screen_FG_CUS_IMG_main_default;
+	lv_style_reset(&style_screen_FG_CUS_IMG_main_default);
+	lv_style_set_image_opa(&style_screen_FG_CUS_IMG_main_default, LV_STATE_DEFAULT, 255);
+	lv_obj_add_style(ui->screen_FG_CUS_IMG, LV_IMG_PART_MAIN, &style_screen_FG_CUS_IMG_main_default);
+
+	// Widget: screen_Cus_Channel_1_btn
+	ui->screen_Cus_Channel_1_btn = lv_btn_create(ui->screen_Function_Set_tab_4, NULL);
+	lv_btn_set_checkable(ui->screen_Cus_Channel_1_btn, true);
+	ui->screen_Cus_Channel_1_btn_label = lv_label_create(ui->screen_Cus_Channel_1_btn, NULL);
+	lv_label_set_text(ui->screen_Cus_Channel_1_btn_label, "Channel 1");
+	lv_label_set_align(ui->screen_Cus_Channel_1_btn_label, LV_LABEL_ALIGN_CENTER);
+	lv_obj_set_pos(ui->screen_Cus_Channel_1_btn, 15, 99);
+	lv_obj_set_size(ui->screen_Cus_Channel_1_btn, 89, 23);
+
+	// Set style for screen_Cus_Channel_1_btn. Part: LV_BTN_PART_MAIN, State: LV_STATE_DEFAULT
+	static lv_style_t style_screen_Cus_Channel_1_btn_main_default;
+	lv_style_reset(&style_screen_Cus_Channel_1_btn_main_default);
+	lv_style_set_text_color(&style_screen_Cus_Channel_1_btn_main_default, LV_STATE_DEFAULT, lv_color_hex(0x000000));
+	lv_style_set_text_font(&style_screen_Cus_Channel_1_btn_main_default, LV_STATE_DEFAULT, &lv_font_montserratMedium_12);
+	lv_style_set_bg_opa(&style_screen_Cus_Channel_1_btn_main_default, LV_STATE_DEFAULT, 255);
+	lv_style_set_bg_color(&style_screen_Cus_Channel_1_btn_main_default, LV_STATE_DEFAULT, lv_color_hex(0xffffff));
+	lv_style_set_border_width(&style_screen_Cus_Channel_1_btn_main_default, LV_STATE_DEFAULT, 2);
+	lv_style_set_border_opa(&style_screen_Cus_Channel_1_btn_main_default, LV_STATE_DEFAULT, 255);
+	lv_style_set_border_color(&style_screen_Cus_Channel_1_btn_main_default, LV_STATE_DEFAULT, lv_color_hex(0xbf001d));
+	lv_style_set_radius(&style_screen_Cus_Channel_1_btn_main_default, LV_STATE_DEFAULT, 4);
+	lv_style_set_shadow_width(&style_screen_Cus_Channel_1_btn_main_default, LV_STATE_DEFAULT, 0);
+	lv_obj_add_style(ui->screen_Cus_Channel_1_btn, LV_BTN_PART_MAIN, &style_screen_Cus_Channel_1_btn_main_default);
+
+	// Set style for screen_Cus_Channel_1_btn. Part: LV_BTN_PART_MAIN, State: LV_STATE_PRESSED
+	static lv_style_t style_screen_Cus_Channel_1_btn_main_pressed;
+	lv_style_reset(&style_screen_Cus_Channel_1_btn_main_pressed);
+	lv_style_set_text_color(&style_screen_Cus_Channel_1_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0x000000));
+	lv_style_set_text_font(&style_screen_Cus_Channel_1_btn_main_pressed, LV_STATE_PRESSED, &lv_font_montserratMedium_12);
+	lv_style_set_bg_opa(&style_screen_Cus_Channel_1_btn_main_pressed, LV_STATE_PRESSED, 255);
+	lv_style_set_bg_color(&style_screen_Cus_Channel_1_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0xD0F6FF));
+	lv_style_set_border_width(&style_screen_Cus_Channel_1_btn_main_pressed, LV_STATE_PRESSED, 2);
+	lv_style_set_border_opa(&style_screen_Cus_Channel_1_btn_main_pressed, LV_STATE_PRESSED, 255);
+	lv_style_set_border_color(&style_screen_Cus_Channel_1_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0x01a2b1));
+	lv_style_set_radius(&style_screen_Cus_Channel_1_btn_main_pressed, LV_STATE_PRESSED, 4);
+	lv_style_set_shadow_width(&style_screen_Cus_Channel_1_btn_main_pressed, LV_STATE_PRESSED, 0);
+	lv_obj_add_style(ui->screen_Cus_Channel_1_btn, LV_BTN_PART_MAIN, &style_screen_Cus_Channel_1_btn_main_pressed);
+
+	// Widget: screen_Cus_Channel_2_btn
+	ui->screen_Cus_Channel_2_btn = lv_btn_create(ui->screen_Function_Set_tab_4, NULL);
+	lv_btn_set_checkable(ui->screen_Cus_Channel_2_btn, true);
+	ui->screen_Cus_Channel_2_btn_label = lv_label_create(ui->screen_Cus_Channel_2_btn, NULL);
+	lv_label_set_text(ui->screen_Cus_Channel_2_btn_label, "Channel 2");
+	lv_label_set_align(ui->screen_Cus_Channel_2_btn_label, LV_LABEL_ALIGN_CENTER);
+	lv_obj_set_pos(ui->screen_Cus_Channel_2_btn, 15, 131);
+	lv_obj_set_size(ui->screen_Cus_Channel_2_btn, 89, 23);
+
+	// Set style for screen_Cus_Channel_2_btn. Part: LV_BTN_PART_MAIN, State: LV_STATE_DEFAULT
+	static lv_style_t style_screen_Cus_Channel_2_btn_main_default;
+	lv_style_reset(&style_screen_Cus_Channel_2_btn_main_default);
+	lv_style_set_text_color(&style_screen_Cus_Channel_2_btn_main_default, LV_STATE_DEFAULT, lv_color_hex(0x000000));
+	lv_style_set_text_font(&style_screen_Cus_Channel_2_btn_main_default, LV_STATE_DEFAULT, &lv_font_montserratMedium_12);
+	lv_style_set_bg_opa(&style_screen_Cus_Channel_2_btn_main_default, LV_STATE_DEFAULT, 255);
+	lv_style_set_bg_color(&style_screen_Cus_Channel_2_btn_main_default, LV_STATE_DEFAULT, lv_color_hex(0xffffff));
+	lv_style_set_border_width(&style_screen_Cus_Channel_2_btn_main_default, LV_STATE_DEFAULT, 2);
+	lv_style_set_border_opa(&style_screen_Cus_Channel_2_btn_main_default, LV_STATE_DEFAULT, 255);
+	lv_style_set_border_color(&style_screen_Cus_Channel_2_btn_main_default, LV_STATE_DEFAULT, lv_color_hex(0xbf001d));
+	lv_style_set_radius(&style_screen_Cus_Channel_2_btn_main_default, LV_STATE_DEFAULT, 4);
+	lv_style_set_shadow_width(&style_screen_Cus_Channel_2_btn_main_default, LV_STATE_DEFAULT, 0);
+	lv_obj_add_style(ui->screen_Cus_Channel_2_btn, LV_BTN_PART_MAIN, &style_screen_Cus_Channel_2_btn_main_default);
+
+	// Set style for screen_Cus_Channel_2_btn. Part: LV_BTN_PART_MAIN, State: LV_STATE_PRESSED
+	static lv_style_t style_screen_Cus_Channel_2_btn_main_pressed;
+	lv_style_reset(&style_screen_Cus_Channel_2_btn_main_pressed);
+	lv_style_set_text_color(&style_screen_Cus_Channel_2_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0x000000));
+	lv_style_set_text_font(&style_screen_Cus_Channel_2_btn_main_pressed, LV_STATE_PRESSED, &lv_font_montserratMedium_12);
+	lv_style_set_bg_opa(&style_screen_Cus_Channel_2_btn_main_pressed, LV_STATE_PRESSED, 255);
+	lv_style_set_bg_color(&style_screen_Cus_Channel_2_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0xD0F6FF));
+	lv_style_set_border_width(&style_screen_Cus_Channel_2_btn_main_pressed, LV_STATE_PRESSED, 2);
+	lv_style_set_border_opa(&style_screen_Cus_Channel_2_btn_main_pressed, LV_STATE_PRESSED, 255);
+	lv_style_set_border_color(&style_screen_Cus_Channel_2_btn_main_pressed, LV_STATE_PRESSED, lv_color_hex(0x01a2b1));
+	lv_style_set_radius(&style_screen_Cus_Channel_2_btn_main_pressed, LV_STATE_PRESSED, 4);
+	lv_style_set_shadow_width(&style_screen_Cus_Channel_2_btn_main_pressed, LV_STATE_PRESSED, 0);
+	lv_obj_add_style(ui->screen_Cus_Channel_2_btn, LV_BTN_PART_MAIN, &style_screen_Cus_Channel_2_btn_main_pressed);
+
+	// Widget: screen_Cus_Pword_Slider
+	ui->screen_Cus_Pword_Slider = lv_slider_create(ui->screen_Function_Set_tab_4, NULL);
+	lv_slider_set_range(ui->screen_Cus_Pword_Slider, 0, 360);
+	lv_slider_set_value(ui->screen_Cus_Pword_Slider, 50, false);
+	lv_obj_set_pos(ui->screen_Cus_Pword_Slider, 151, 151);
+	lv_obj_set_size(ui->screen_Cus_Pword_Slider, 168, 5);
+
+	// Set style for screen_Cus_Pword_Slider. Part: LV_SLIDER_PART_BG, State: LV_STATE_DEFAULT
+	static lv_style_t style_screen_Cus_Pword_Slider_bg_default;
+	lv_style_reset(&style_screen_Cus_Pword_Slider_bg_default);
+	lv_style_set_bg_opa(&style_screen_Cus_Pword_Slider_bg_default, LV_STATE_DEFAULT, 255);
+	lv_style_set_bg_color(&style_screen_Cus_Pword_Slider_bg_default, LV_STATE_DEFAULT, lv_color_hex(0xd4d7d9));
+	lv_style_set_radius(&style_screen_Cus_Pword_Slider_bg_default, LV_STATE_DEFAULT, 50);
+	lv_style_set_shadow_width(&style_screen_Cus_Pword_Slider_bg_default, LV_STATE_DEFAULT, 0);
+	lv_obj_add_style(ui->screen_Cus_Pword_Slider, LV_SLIDER_PART_BG, &style_screen_Cus_Pword_Slider_bg_default);
+
+	// Set style for screen_Cus_Pword_Slider. Part: LV_SLIDER_PART_INDIC, State: LV_STATE_DEFAULT
+	static lv_style_t style_screen_Cus_Pword_Slider_indic_default;
+	lv_style_reset(&style_screen_Cus_Pword_Slider_indic_default);
+	lv_style_set_bg_opa(&style_screen_Cus_Pword_Slider_indic_default, LV_STATE_DEFAULT, 255);
+	lv_style_set_bg_color(&style_screen_Cus_Pword_Slider_indic_default, LV_STATE_DEFAULT, lv_color_hex(0x49000b));
+	lv_style_set_radius(&style_screen_Cus_Pword_Slider_indic_default, LV_STATE_DEFAULT, 50);
+	lv_obj_add_style(ui->screen_Cus_Pword_Slider, LV_SLIDER_PART_INDIC, &style_screen_Cus_Pword_Slider_indic_default);
+
+	// Set style for screen_Cus_Pword_Slider. Part: LV_SLIDER_PART_KNOB, State: LV_STATE_DEFAULT
+	static lv_style_t style_screen_Cus_Pword_Slider_knob_default;
+	lv_style_reset(&style_screen_Cus_Pword_Slider_knob_default);
+	lv_style_set_bg_opa(&style_screen_Cus_Pword_Slider_knob_default, LV_STATE_DEFAULT, 255);
+	lv_style_set_bg_color(&style_screen_Cus_Pword_Slider_knob_default, LV_STATE_DEFAULT, lv_color_hex(0xd30020));
+	lv_style_set_radius(&style_screen_Cus_Pword_Slider_knob_default, LV_STATE_DEFAULT, 50);
+	lv_obj_add_style(ui->screen_Cus_Pword_Slider, LV_SLIDER_PART_KNOB, &style_screen_Cus_Pword_Slider_knob_default);
+
+	// Widget: screen_Cus_Fword_Slider
+	ui->screen_Cus_Fword_Slider = lv_slider_create(ui->screen_Function_Set_tab_4, NULL);
+	lv_slider_set_range(ui->screen_Cus_Fword_Slider, 0, 1000);
+	lv_slider_set_value(ui->screen_Cus_Fword_Slider, 50, false);
+	lv_obj_set_pos(ui->screen_Cus_Fword_Slider, 151, 91);
+	lv_obj_set_size(ui->screen_Cus_Fword_Slider, 168, 5);
+
+	// Set style for screen_Cus_Fword_Slider. Part: LV_SLIDER_PART_BG, State: LV_STATE_DEFAULT
+	static lv_style_t style_screen_Cus_Fword_Slider_bg_default;
+	lv_style_reset(&style_screen_Cus_Fword_Slider_bg_default);
+	lv_style_set_bg_opa(&style_screen_Cus_Fword_Slider_bg_default, LV_STATE_DEFAULT, 255);
+	lv_style_set_bg_color(&style_screen_Cus_Fword_Slider_bg_default, LV_STATE_DEFAULT, lv_color_hex(0xd4d7d9));
+	lv_style_set_radius(&style_screen_Cus_Fword_Slider_bg_default, LV_STATE_DEFAULT, 50);
+	lv_style_set_shadow_width(&style_screen_Cus_Fword_Slider_bg_default, LV_STATE_DEFAULT, 0);
+	lv_obj_add_style(ui->screen_Cus_Fword_Slider, LV_SLIDER_PART_BG, &style_screen_Cus_Fword_Slider_bg_default);
+
+	// Set style for screen_Cus_Fword_Slider. Part: LV_SLIDER_PART_INDIC, State: LV_STATE_DEFAULT
+	static lv_style_t style_screen_Cus_Fword_Slider_indic_default;
+	lv_style_reset(&style_screen_Cus_Fword_Slider_indic_default);
+	lv_style_set_bg_opa(&style_screen_Cus_Fword_Slider_indic_default, LV_STATE_DEFAULT, 255);
+	lv_style_set_bg_color(&style_screen_Cus_Fword_Slider_indic_default, LV_STATE_DEFAULT, lv_color_hex(0x49000b));
+	lv_style_set_radius(&style_screen_Cus_Fword_Slider_indic_default, LV_STATE_DEFAULT, 50);
+	lv_obj_add_style(ui->screen_Cus_Fword_Slider, LV_SLIDER_PART_INDIC, &style_screen_Cus_Fword_Slider_indic_default);
+
+	// Set style for screen_Cus_Fword_Slider. Part: LV_SLIDER_PART_KNOB, State: LV_STATE_DEFAULT
+	static lv_style_t style_screen_Cus_Fword_Slider_knob_default;
+	lv_style_reset(&style_screen_Cus_Fword_Slider_knob_default);
+	lv_style_set_bg_opa(&style_screen_Cus_Fword_Slider_knob_default, LV_STATE_DEFAULT, 255);
+	lv_style_set_bg_color(&style_screen_Cus_Fword_Slider_knob_default, LV_STATE_DEFAULT, lv_color_hex(0xd30020));
+	lv_style_set_radius(&style_screen_Cus_Fword_Slider_knob_default, LV_STATE_DEFAULT, 50);
+	lv_obj_add_style(ui->screen_Cus_Fword_Slider, LV_SLIDER_PART_KNOB, &style_screen_Cus_Fword_Slider_knob_default);
+
+	// Widget: screen_Cus_Aword_Slider
+	ui->screen_Cus_Aword_Slider = lv_slider_create(ui->screen_Function_Set_tab_4, NULL);
+	lv_slider_set_range(ui->screen_Cus_Aword_Slider, 0, 10000);
+	lv_slider_set_value(ui->screen_Cus_Aword_Slider, 50, false);
+	lv_obj_set_pos(ui->screen_Cus_Aword_Slider, 151, 31);
+	lv_obj_set_size(ui->screen_Cus_Aword_Slider, 168, 5);
+
+	// Set style for screen_Cus_Aword_Slider. Part: LV_SLIDER_PART_BG, State: LV_STATE_DEFAULT
+	static lv_style_t style_screen_Cus_Aword_Slider_bg_default;
+	lv_style_reset(&style_screen_Cus_Aword_Slider_bg_default);
+	lv_style_set_bg_opa(&style_screen_Cus_Aword_Slider_bg_default, LV_STATE_DEFAULT, 255);
+	lv_style_set_bg_color(&style_screen_Cus_Aword_Slider_bg_default, LV_STATE_DEFAULT, lv_color_hex(0xd4d7d9));
+	lv_style_set_radius(&style_screen_Cus_Aword_Slider_bg_default, LV_STATE_DEFAULT, 50);
+	lv_style_set_shadow_width(&style_screen_Cus_Aword_Slider_bg_default, LV_STATE_DEFAULT, 0);
+	lv_obj_add_style(ui->screen_Cus_Aword_Slider, LV_SLIDER_PART_BG, &style_screen_Cus_Aword_Slider_bg_default);
+
+	// Set style for screen_Cus_Aword_Slider. Part: LV_SLIDER_PART_INDIC, State: LV_STATE_DEFAULT
+	static lv_style_t style_screen_Cus_Aword_Slider_indic_default;
+	lv_style_reset(&style_screen_Cus_Aword_Slider_indic_default);
+	lv_style_set_bg_opa(&style_screen_Cus_Aword_Slider_indic_default, LV_STATE_DEFAULT, 255);
+	lv_style_set_bg_color(&style_screen_Cus_Aword_Slider_indic_default, LV_STATE_DEFAULT, lv_color_hex(0x49000b));
+	lv_style_set_radius(&style_screen_Cus_Aword_Slider_indic_default, LV_STATE_DEFAULT, 50);
+	lv_obj_add_style(ui->screen_Cus_Aword_Slider, LV_SLIDER_PART_INDIC, &style_screen_Cus_Aword_Slider_indic_default);
+
+	// Set style for screen_Cus_Aword_Slider. Part: LV_SLIDER_PART_KNOB, State: LV_STATE_DEFAULT
+	static lv_style_t style_screen_Cus_Aword_Slider_knob_default;
+	lv_style_reset(&style_screen_Cus_Aword_Slider_knob_default);
+	lv_style_set_bg_opa(&style_screen_Cus_Aword_Slider_knob_default, LV_STATE_DEFAULT, 255);
+	lv_style_set_bg_color(&style_screen_Cus_Aword_Slider_knob_default, LV_STATE_DEFAULT, lv_color_hex(0xd30020));
+	lv_style_set_radius(&style_screen_Cus_Aword_Slider_knob_default, LV_STATE_DEFAULT, 50);
+	lv_obj_add_style(ui->screen_Cus_Aword_Slider, LV_SLIDER_PART_KNOB, &style_screen_Cus_Aword_Slider_knob_default);
+
+	// Widget: screen_Cus_Fword_Label
+	ui->screen_Cus_Fword_Label = lv_label_create(ui->screen_Function_Set_tab_4, NULL);
+	lv_label_set_text(ui->screen_Cus_Fword_Label, "Freq :");
+	lv_label_set_align(ui->screen_Cus_Fword_Label, LV_LABEL_ALIGN_CENTER);
+	lv_obj_set_pos(ui->screen_Cus_Fword_Label, 150, 70);
+	lv_obj_set_width(ui->screen_Cus_Fword_Label, 100);
+
+	// Set style for screen_Cus_Fword_Label. Part: LV_LABEL_PART_MAIN, State: LV_STATE_DEFAULT
+	static lv_style_t style_screen_Cus_Fword_Label_main_default;
+	lv_style_reset(&style_screen_Cus_Fword_Label_main_default);
+	lv_style_set_radius(&style_screen_Cus_Fword_Label_main_default, LV_STATE_DEFAULT, 0);
+	lv_style_set_text_color(&style_screen_Cus_Fword_Label_main_default, LV_STATE_DEFAULT, lv_color_hex(0x000000));
+	lv_style_set_text_font(&style_screen_Cus_Fword_Label_main_default, LV_STATE_DEFAULT, &lv_font_montserratMedium_12);
+	lv_style_set_text_letter_space(&style_screen_Cus_Fword_Label_main_default, LV_STATE_DEFAULT, 2);
+	lv_style_set_text_line_space(&style_screen_Cus_Fword_Label_main_default, LV_STATE_DEFAULT, 0);
+	lv_style_set_bg_opa(&style_screen_Cus_Fword_Label_main_default, LV_STATE_DEFAULT, 0);
+	lv_style_set_pad_top(&style_screen_Cus_Fword_Label_main_default, LV_STATE_DEFAULT, 0);
+	lv_style_set_pad_right(&style_screen_Cus_Fword_Label_main_default, LV_STATE_DEFAULT, 0);
+	lv_style_set_pad_bottom(&style_screen_Cus_Fword_Label_main_default, LV_STATE_DEFAULT, 0);
+	lv_style_set_pad_left(&style_screen_Cus_Fword_Label_main_default, LV_STATE_DEFAULT, 0);
+	lv_style_set_shadow_width(&style_screen_Cus_Fword_Label_main_default, LV_STATE_DEFAULT, 0);
+	lv_obj_add_style(ui->screen_Cus_Fword_Label, LV_LABEL_PART_MAIN, &style_screen_Cus_Fword_Label_main_default);
+
+	// Widget: screen_Cus_Pword_Label
+	ui->screen_Cus_Pword_Label = lv_label_create(ui->screen_Function_Set_tab_4, NULL);
+	lv_label_set_text(ui->screen_Cus_Pword_Label, "Phas :");
+	lv_label_set_align(ui->screen_Cus_Pword_Label, LV_LABEL_ALIGN_CENTER);
+	lv_obj_set_pos(ui->screen_Cus_Pword_Label, 150, 130);
+	lv_obj_set_width(ui->screen_Cus_Pword_Label, 100);
+
+	// Set style for screen_Cus_Pword_Label. Part: LV_LABEL_PART_MAIN, State: LV_STATE_DEFAULT
+	static lv_style_t style_screen_Cus_Pword_Label_main_default;
+	lv_style_reset(&style_screen_Cus_Pword_Label_main_default);
+	lv_style_set_radius(&style_screen_Cus_Pword_Label_main_default, LV_STATE_DEFAULT, 0);
+	lv_style_set_text_color(&style_screen_Cus_Pword_Label_main_default, LV_STATE_DEFAULT, lv_color_hex(0x000000));
+	lv_style_set_text_font(&style_screen_Cus_Pword_Label_main_default, LV_STATE_DEFAULT, &lv_font_montserratMedium_12);
+	lv_style_set_text_letter_space(&style_screen_Cus_Pword_Label_main_default, LV_STATE_DEFAULT, 2);
+	lv_style_set_text_line_space(&style_screen_Cus_Pword_Label_main_default, LV_STATE_DEFAULT, 0);
+	lv_style_set_bg_opa(&style_screen_Cus_Pword_Label_main_default, LV_STATE_DEFAULT, 0);
+	lv_style_set_pad_top(&style_screen_Cus_Pword_Label_main_default, LV_STATE_DEFAULT, 0);
+	lv_style_set_pad_right(&style_screen_Cus_Pword_Label_main_default, LV_STATE_DEFAULT, 0);
+	lv_style_set_pad_bottom(&style_screen_Cus_Pword_Label_main_default, LV_STATE_DEFAULT, 0);
+	lv_style_set_pad_left(&style_screen_Cus_Pword_Label_main_default, LV_STATE_DEFAULT, 0);
+	lv_style_set_shadow_width(&style_screen_Cus_Pword_Label_main_default, LV_STATE_DEFAULT, 0);
+	lv_obj_add_style(ui->screen_Cus_Pword_Label, LV_LABEL_PART_MAIN, &style_screen_Cus_Pword_Label_main_default);
+
+	// Widget: screen_Cus_Aword_Label
+	ui->screen_Cus_Aword_Label = lv_label_create(ui->screen_Function_Set_tab_4, NULL);
+	lv_label_set_text(ui->screen_Cus_Aword_Label, "Ampl :");
+	lv_label_set_align(ui->screen_Cus_Aword_Label, LV_LABEL_ALIGN_CENTER);
+	lv_obj_set_pos(ui->screen_Cus_Aword_Label, 150, 10);
+	lv_obj_set_width(ui->screen_Cus_Aword_Label, 100);
+
+	// Set style for screen_Cus_Aword_Label. Part: LV_LABEL_PART_MAIN, State: LV_STATE_DEFAULT
+	static lv_style_t style_screen_Cus_Aword_Label_main_default;
+	lv_style_reset(&style_screen_Cus_Aword_Label_main_default);
+	lv_style_set_radius(&style_screen_Cus_Aword_Label_main_default, LV_STATE_DEFAULT, 0);
+	lv_style_set_text_color(&style_screen_Cus_Aword_Label_main_default, LV_STATE_DEFAULT, lv_color_hex(0x000000));
+	lv_style_set_text_font(&style_screen_Cus_Aword_Label_main_default, LV_STATE_DEFAULT, &lv_font_montserratMedium_12);
+	lv_style_set_text_letter_space(&style_screen_Cus_Aword_Label_main_default, LV_STATE_DEFAULT, 2);
+	lv_style_set_text_line_space(&style_screen_Cus_Aword_Label_main_default, LV_STATE_DEFAULT, 0);
+	lv_style_set_bg_opa(&style_screen_Cus_Aword_Label_main_default, LV_STATE_DEFAULT, 0);
+	lv_style_set_pad_top(&style_screen_Cus_Aword_Label_main_default, LV_STATE_DEFAULT, 0);
+	lv_style_set_pad_right(&style_screen_Cus_Aword_Label_main_default, LV_STATE_DEFAULT, 0);
+	lv_style_set_pad_bottom(&style_screen_Cus_Aword_Label_main_default, LV_STATE_DEFAULT, 0);
+	lv_style_set_pad_left(&style_screen_Cus_Aword_Label_main_default, LV_STATE_DEFAULT, 0);
+	lv_style_set_shadow_width(&style_screen_Cus_Aword_Label_main_default, LV_STATE_DEFAULT, 0);
+	lv_obj_add_style(ui->screen_Cus_Aword_Label, LV_LABEL_PART_MAIN, &style_screen_Cus_Aword_Label_main_default);
+
+	// Widget: screen_Cus_MV_unit
+	ui->screen_Cus_MV_unit = lv_label_create(ui->screen_Function_Set_tab_4, NULL);
+	lv_label_set_text(ui->screen_Cus_MV_unit, "mV");
+	lv_label_set_align(ui->screen_Cus_MV_unit, LV_LABEL_ALIGN_CENTER);
+	lv_obj_set_pos(ui->screen_Cus_MV_unit, 267, 10);
+	lv_obj_set_width(ui->screen_Cus_MV_unit, 32);
+
+	// Set style for screen_Cus_MV_unit. Part: LV_LABEL_PART_MAIN, State: LV_STATE_DEFAULT
+	static lv_style_t style_screen_Cus_MV_unit_main_default;
+	lv_style_reset(&style_screen_Cus_MV_unit_main_default);
+	lv_style_set_radius(&style_screen_Cus_MV_unit_main_default, LV_STATE_DEFAULT, 0);
+	lv_style_set_text_color(&style_screen_Cus_MV_unit_main_default, LV_STATE_DEFAULT, lv_color_hex(0x000000));
+	lv_style_set_text_font(&style_screen_Cus_MV_unit_main_default, LV_STATE_DEFAULT, &lv_font_montserratMedium_12);
+	lv_style_set_text_letter_space(&style_screen_Cus_MV_unit_main_default, LV_STATE_DEFAULT, 2);
+	lv_style_set_text_line_space(&style_screen_Cus_MV_unit_main_default, LV_STATE_DEFAULT, 0);
+	lv_style_set_bg_opa(&style_screen_Cus_MV_unit_main_default, LV_STATE_DEFAULT, 0);
+	lv_style_set_pad_top(&style_screen_Cus_MV_unit_main_default, LV_STATE_DEFAULT, 0);
+	lv_style_set_pad_right(&style_screen_Cus_MV_unit_main_default, LV_STATE_DEFAULT, 0);
+	lv_style_set_pad_bottom(&style_screen_Cus_MV_unit_main_default, LV_STATE_DEFAULT, 0);
+	lv_style_set_pad_left(&style_screen_Cus_MV_unit_main_default, LV_STATE_DEFAULT, 0);
+	lv_style_set_shadow_width(&style_screen_Cus_MV_unit_main_default, LV_STATE_DEFAULT, 0);
+	lv_obj_add_style(ui->screen_Cus_MV_unit, LV_LABEL_PART_MAIN, &style_screen_Cus_MV_unit_main_default);
+
+	// Widget: screen_Cus_Degree_unit
+	ui->screen_Cus_Degree_unit = lv_label_create(ui->screen_Function_Set_tab_4, NULL);
+	lv_label_set_text(ui->screen_Cus_Degree_unit, "degree");
+	lv_label_set_align(ui->screen_Cus_Degree_unit, LV_LABEL_ALIGN_CENTER);
+	lv_obj_set_pos(ui->screen_Cus_Degree_unit, 261, 130);
+	lv_obj_set_width(ui->screen_Cus_Degree_unit, 56);
+
+	// Set style for screen_Cus_Degree_unit. Part: LV_LABEL_PART_MAIN, State: LV_STATE_DEFAULT
+	static lv_style_t style_screen_Cus_Degree_unit_main_default;
+	lv_style_reset(&style_screen_Cus_Degree_unit_main_default);
+	lv_style_set_radius(&style_screen_Cus_Degree_unit_main_default, LV_STATE_DEFAULT, 0);
+	lv_style_set_text_color(&style_screen_Cus_Degree_unit_main_default, LV_STATE_DEFAULT, lv_color_hex(0x000000));
+	lv_style_set_text_font(&style_screen_Cus_Degree_unit_main_default, LV_STATE_DEFAULT, &lv_font_montserratMedium_12);
+	lv_style_set_text_letter_space(&style_screen_Cus_Degree_unit_main_default, LV_STATE_DEFAULT, 2);
+	lv_style_set_text_line_space(&style_screen_Cus_Degree_unit_main_default, LV_STATE_DEFAULT, 0);
+	lv_style_set_bg_opa(&style_screen_Cus_Degree_unit_main_default, LV_STATE_DEFAULT, 0);
+	lv_style_set_pad_top(&style_screen_Cus_Degree_unit_main_default, LV_STATE_DEFAULT, 0);
+	lv_style_set_pad_right(&style_screen_Cus_Degree_unit_main_default, LV_STATE_DEFAULT, 0);
+	lv_style_set_pad_bottom(&style_screen_Cus_Degree_unit_main_default, LV_STATE_DEFAULT, 0);
+	lv_style_set_pad_left(&style_screen_Cus_Degree_unit_main_default, LV_STATE_DEFAULT, 0);
+	lv_style_set_shadow_width(&style_screen_Cus_Degree_unit_main_default, LV_STATE_DEFAULT, 0);
+	lv_obj_add_style(ui->screen_Cus_Degree_unit, LV_LABEL_PART_MAIN, &style_screen_Cus_Degree_unit_main_default);
+
+	// Widget: screen_Cus_Hz_btn
+	ui->screen_Cus_Hz_btn = lv_btn_create(ui->screen_Function_Set_tab_4, NULL);
+	ui->screen_Cus_Hz_btn_label = lv_label_create(ui->screen_Cus_Hz_btn, NULL);
+	lv_label_set_text(ui->screen_Cus_Hz_btn_label, "Hz");
+	lv_label_set_align(ui->screen_Cus_Hz_btn_label, LV_LABEL_ALIGN_CENTER);
+	lv_obj_set_pos(ui->screen_Cus_Hz_btn, 260, 65);
+	lv_obj_set_size(ui->screen_Cus_Hz_btn, 49, 23);
+
+	// Set style for screen_Cus_Hz_btn. Part: LV_BTN_PART_MAIN, State: LV_STATE_DEFAULT
+	static lv_style_t style_screen_Cus_Hz_btn_main_default;
+	lv_style_reset(&style_screen_Cus_Hz_btn_main_default);
+	lv_style_set_text_color(&style_screen_Cus_Hz_btn_main_default, LV_STATE_DEFAULT, lv_color_hex(0x000000));
+	lv_style_set_text_font(&style_screen_Cus_Hz_btn_main_default, LV_STATE_DEFAULT, &lv_font_montserratMedium_12);
+	lv_style_set_bg_opa(&style_screen_Cus_Hz_btn_main_default, LV_STATE_DEFAULT, 0);
+	lv_style_set_border_width(&style_screen_Cus_Hz_btn_main_default, LV_STATE_DEFAULT, 0);
+	lv_style_set_border_opa(&style_screen_Cus_Hz_btn_main_default, LV_STATE_DEFAULT, 255);
+	lv_style_set_border_color(&style_screen_Cus_Hz_btn_main_default, LV_STATE_DEFAULT, lv_color_hex(0x01a2b1));
+	lv_style_set_radius(&style_screen_Cus_Hz_btn_main_default, LV_STATE_DEFAULT, 2);
+	lv_style_set_shadow_width(&style_screen_Cus_Hz_btn_main_default, LV_STATE_DEFAULT, 0);
+	lv_obj_add_style(ui->screen_Cus_Hz_btn, LV_BTN_PART_MAIN, &style_screen_Cus_Hz_btn_main_default);
+
+	// Tab: screen_Function_Set_tab_5 with title "Draw"
+	ui->screen_Function_Set_tab_5 = lv_tabview_add_tab(ui->screen_Function_Set, "Draw");
+	lv_obj_t *screen_Function_Set_tab_5_label = lv_label_create(ui->screen_Function_Set_tab_5, NULL);
+	lv_label_set_text(screen_Function_Set_tab_5_label, "");
+
 	// Widget: screen_Cus_Line
-	ui->screen_Cus_Line = lv_line_create(ui->screen_Function_Set_tab_4, NULL);
+	ui->screen_Cus_Line = lv_line_create(ui->screen_Function_Set_tab_5, NULL);
 	static lv_point_t screen_Cus_Line[] = {
 		{0, 100},
 		{10, 100},
@@ -1129,11 +1442,10 @@ void setup_scr_screen(lv_ui *ui)
 	lv_style_set_line_color(&style_screen_Cus_Line_main_default, LV_STATE_DEFAULT, lv_color_hex(0xd20020));
 	lv_style_set_line_rounded(&style_screen_Cus_Line_main_default, LV_STATE_DEFAULT, true);
 	lv_style_set_line_width(&style_screen_Cus_Line_main_default, LV_STATE_DEFAULT, 2);
-	lv_style_set_line_opa(&style_screen_Cus_Line_main_default, LV_STATE_DEFAULT, 255);
 	lv_obj_add_style(ui->screen_Cus_Line, LV_LINE_PART_MAIN, &style_screen_Cus_Line_main_default);
 
 	// Widget: screen_Cus_Label
-	ui->screen_Cus_Label = lv_label_create(ui->screen_Function_Set_tab_4, NULL);
+	ui->screen_Cus_Label = lv_label_create(ui->screen_Function_Set_tab_5, NULL);
 	lv_label_set_text(ui->screen_Cus_Label, "please draw the line here");
 	lv_label_set_align(ui->screen_Cus_Label, LV_LABEL_ALIGN_CENTER);
 	lv_obj_set_pos(ui->screen_Cus_Label, 24, 1);
@@ -1156,7 +1468,7 @@ void setup_scr_screen(lv_ui *ui)
 	lv_obj_add_style(ui->screen_Cus_Label, LV_LABEL_PART_MAIN, &style_screen_Cus_Label_main_default);
 
 	// Widget: screen_Coordinate_RetrievalX
-	ui->screen_Coordinate_RetrievalX = lv_label_create(ui->screen_Function_Set_tab_4, NULL);
+	ui->screen_Coordinate_RetrievalX = lv_label_create(ui->screen_Function_Set_tab_5, NULL);
 	lv_label_set_text(ui->screen_Coordinate_RetrievalX, "T/1000 :");
 	lv_label_set_align(ui->screen_Coordinate_RetrievalX, LV_LABEL_ALIGN_CENTER);
 	lv_obj_set_pos(ui->screen_Coordinate_RetrievalX, 10, 20);
@@ -1179,7 +1491,7 @@ void setup_scr_screen(lv_ui *ui)
 	lv_obj_add_style(ui->screen_Coordinate_RetrievalX, LV_LABEL_PART_MAIN, &style_screen_Coordinate_RetrievalX_main_default);
 
 	// Widget: screen_Coordinate_RetrievalY
-	ui->screen_Coordinate_RetrievalY = lv_label_create(ui->screen_Function_Set_tab_4, NULL);
+	ui->screen_Coordinate_RetrievalY = lv_label_create(ui->screen_Function_Set_tab_5, NULL);
 	lv_label_set_text(ui->screen_Coordinate_RetrievalY, "mV :");
 	lv_label_set_align(ui->screen_Coordinate_RetrievalY, LV_LABEL_ALIGN_CENTER);
 	lv_obj_set_pos(ui->screen_Coordinate_RetrievalY, 10, 40);

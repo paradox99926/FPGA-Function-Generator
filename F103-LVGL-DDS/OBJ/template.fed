@@ -1,0 +1,935 @@
+;#<FEEDBACK># ARM Linker, 5060750: Last Updated: Wed Mar 27 10:11:36 2024
+;VERSION 0.2
+;FILE 24cxx.o
+AT24CXX_Check <= USED 0
+AT24CXX_ReadLenByte <= USED 0
+AT24CXX_WriteLenByte <= USED 0
+;FILE core_cm3.o
+__REV16 <= USED 0
+__REVSH <= USED 0
+__get_MSP <= USED 0
+__get_PSP <= USED 0
+__set_MSP <= USED 0
+__set_PSP <= USED 0
+;FILE ctiic.o
+CT_Delay <= USED 0
+;FILE custom.o
+;FILE customusart.o
+;FILE delay.o
+;FILE events_init.o
+;FILE ft5206.o
+;FILE gt9147.o
+;FILE gui_guider.o
+init_scr_del_flag <= USED 0
+;FILE key.o
+;FILE lcd.o
+LCD_BGR2RGB <= USED 0
+LCD_DisplayOff <= USED 0
+LCD_DisplayOn <= USED 0
+LCD_DrawRectangle <= USED 0
+LCD_Fill <= USED 0
+LCD_ReadPoint <= USED 0
+LCD_Set_Window <= USED 0
+LCD_ShowxNum <= USED 0
+LCD_WR_DATA <= USED 0
+LCD_WR_REG <= USED 0
+LCD_WriteRAM <= USED 0
+opt_delay <= USED 0
+;FILE led.o
+;FILE lv_anim.o
+lv_anim_count_running <= USED 0
+lv_anim_path_bounce <= USED 0
+lv_anim_path_ease_in <= USED 0
+lv_anim_path_ease_in_out <= USED 0
+lv_anim_path_ease_out <= USED 0
+lv_anim_path_overshoot <= USED 0
+lv_anim_refr_now <= USED 0
+;FILE lv_arc.o
+lv_arc_create <= USED 0
+lv_arc_get_adjustable <= USED 0
+lv_arc_get_angle_end <= USED 0
+lv_arc_get_angle_start <= USED 0
+lv_arc_get_bg_angle_end <= USED 0
+lv_arc_get_bg_angle_start <= USED 0
+lv_arc_get_max_value <= USED 0
+lv_arc_get_min_value <= USED 0
+lv_arc_get_type <= USED 0
+lv_arc_get_value <= USED 0
+lv_arc_is_dragged <= USED 0
+lv_arc_set_adjustable <= USED 0
+lv_arc_set_angles <= USED 0
+lv_arc_set_bg_angles <= USED 0
+lv_arc_set_bg_end_angle <= USED 0
+lv_arc_set_bg_start_angle <= USED 0
+lv_arc_set_chg_rate <= USED 0
+lv_arc_set_end_angle <= USED 0
+lv_arc_set_range <= USED 0
+lv_arc_set_rotation <= USED 0
+lv_arc_set_start_angle <= USED 0
+lv_arc_set_type <= USED 0
+lv_arc_set_value <= USED 0
+;FILE lv_area.o
+;FILE lv_async.o
+lv_async_call <= USED 0
+;FILE lv_bar.o
+lv_bar_get_anim_time <= USED 0
+lv_bar_get_max_value <= USED 0
+lv_bar_get_min_value <= USED 0
+lv_bar_set_anim_time <= USED 0
+lv_bar_set_type <= USED 0
+;FILE lv_btn.o
+lv_btn_get_state <= USED 0
+lv_btn_toggle <= USED 0
+;FILE lv_btnmatrix.o
+lv_btnmatrix_get_focused_btn <= USED 0
+lv_btnmatrix_get_map_array <= USED 0
+lv_btnmatrix_get_one_check <= USED 0
+lv_btnmatrix_get_recolor <= USED 0
+lv_btnmatrix_set_align <= USED 0
+lv_btnmatrix_set_btn_ctrl_all <= USED 0
+lv_btnmatrix_set_btn_width <= USED 0
+lv_btnmatrix_set_one_check <= USED 0
+lv_btnmatrix_set_recolor <= USED 0
+;FILE lv_calendar.o
+lv_calendar_create <= USED 0
+lv_calendar_get_day_names <= USED 0
+lv_calendar_get_highlighted_dates <= USED 0
+lv_calendar_get_highlighted_dates_num <= USED 0
+lv_calendar_get_month_names <= USED 0
+lv_calendar_get_pressed_date <= USED 0
+lv_calendar_get_showed_date <= USED 0
+lv_calendar_get_today_date <= USED 0
+lv_calendar_set_day_names <= USED 0
+lv_calendar_set_highlighted_dates <= USED 0
+lv_calendar_set_month_names <= USED 0
+lv_calendar_set_showed_date <= USED 0
+lv_calendar_set_today_date <= USED 0
+;FILE lv_canvas.o
+lv_canvas_blur_hor <= USED 0
+lv_canvas_blur_ver <= USED 0
+lv_canvas_copy_buf <= USED 0
+lv_canvas_create <= USED 0
+lv_canvas_draw_arc <= USED 0
+lv_canvas_draw_img <= USED 0
+lv_canvas_draw_line <= USED 0
+lv_canvas_draw_polygon <= USED 0
+lv_canvas_draw_rect <= USED 0
+lv_canvas_draw_text <= USED 0
+lv_canvas_fill_bg <= USED 0
+lv_canvas_get_img <= USED 0
+lv_canvas_get_px <= USED 0
+lv_canvas_set_buffer <= USED 0
+lv_canvas_set_palette <= USED 0
+lv_canvas_set_px <= USED 0
+lv_canvas_transform <= USED 0
+;FILE lv_chart.o
+lv_chart_add_cursor <= USED 0
+lv_chart_add_series <= USED 0
+lv_chart_clear_series <= USED 0
+lv_chart_create <= USED 0
+lv_chart_get_cursor_point <= USED 0
+lv_chart_get_nearest_index_from_coord <= USED 0
+lv_chart_get_point_count <= USED 0
+lv_chart_get_point_id <= USED 0
+lv_chart_get_series_area <= USED 0
+lv_chart_get_series_axis <= USED 0
+lv_chart_get_type <= USED 0
+lv_chart_get_x_from_index <= USED 0
+lv_chart_get_x_start_point <= USED 0
+lv_chart_get_y_from_index <= USED 0
+lv_chart_init_points <= USED 0
+lv_chart_refresh <= USED 0
+lv_chart_set_cursor_point <= USED 0
+lv_chart_set_div_line_count <= USED 0
+lv_chart_set_ext_array <= USED 0
+lv_chart_set_next <= USED 0
+lv_chart_set_point_count <= USED 0
+lv_chart_set_point_id <= USED 0
+lv_chart_set_points <= USED 0
+lv_chart_set_secondary_y_tick_length <= USED 0
+lv_chart_set_secondary_y_tick_texts <= USED 0
+lv_chart_set_series_axis <= USED 0
+lv_chart_set_type <= USED 0
+lv_chart_set_update_mode <= USED 0
+lv_chart_set_x_start_point <= USED 0
+lv_chart_set_x_tick_length <= USED 0
+lv_chart_set_x_tick_texts <= USED 0
+lv_chart_set_y_range <= USED 0
+lv_chart_set_y_tick_length <= USED 0
+lv_chart_set_y_tick_texts <= USED 0
+;FILE lv_checkbox.o
+lv_checkbox_create <= USED 0
+lv_checkbox_get_text <= USED 0
+lv_checkbox_set_checked <= USED 0
+lv_checkbox_set_disabled <= USED 0
+lv_checkbox_set_state <= USED 0
+lv_checkbox_set_text <= USED 0
+lv_checkbox_set_text_static <= USED 0
+;FILE lv_color.o
+lv_color_hsv_to_rgb <= USED 0
+lv_color_rgb_to_hsv <= USED 0
+lv_color_to_hsv <= USED 0
+;FILE lv_cont.o
+lv_cont_get_fit_bottom <= USED 0
+;FILE lv_cpicker.o
+lv_cpicker_create <= USED 0
+lv_cpicker_get_color <= USED 0
+lv_cpicker_get_color_mode <= USED 0
+lv_cpicker_get_color_mode_fixed <= USED 0
+lv_cpicker_get_hsv <= USED 0
+lv_cpicker_get_hue <= USED 0
+lv_cpicker_get_knob_colored <= USED 0
+lv_cpicker_get_saturation <= USED 0
+lv_cpicker_get_value <= USED 0
+lv_cpicker_set_color <= USED 0
+lv_cpicker_set_color_mode <= USED 0
+lv_cpicker_set_color_mode_fixed <= USED 0
+lv_cpicker_set_hsv <= USED 0
+lv_cpicker_set_hue <= USED 0
+lv_cpicker_set_knob_colored <= USED 0
+lv_cpicker_set_saturation <= USED 0
+lv_cpicker_set_type <= USED 0
+lv_cpicker_set_value <= USED 0
+;FILE lv_debug.o
+lv_debug_check_mem_integrity <= USED 0
+lv_debug_check_str <= USED 0
+;FILE lv_demo_widgets.o
+lv_demo_widgets <= USED 0
+;FILE lv_disp.o
+_lv_disp_get_refr_task <= USED 0
+lv_disp_assign_screen <= USED 0
+lv_disp_clean_dcache <= USED 0
+lv_disp_get_inactive_time <= USED 0
+lv_disp_set_bg_color <= USED 0
+lv_disp_set_bg_image <= USED 0
+lv_disp_set_bg_opa <= USED 0
+lv_disp_trig_activity <= USED 0
+lv_scr_load_anim <= USED 0
+;FILE lv_draw_arc.o
+lv_draw_arc <= USED 0
+;FILE lv_draw_blend.o
+;FILE lv_draw_img.o
+;FILE lv_draw_label.o
+;FILE lv_draw_line.o
+;FILE lv_draw_mask.o
+lv_draw_mask_angle_init <= USED 0
+lv_draw_mask_fade_init <= USED 0
+lv_draw_mask_line_angle_init <= USED 0
+lv_draw_mask_map_init <= USED 0
+;FILE lv_draw_rect.o
+lv_draw_px <= USED 0
+;FILE lv_draw_triangle.o
+lv_draw_polygon <= USED 0
+lv_draw_triangle <= USED 0
+;FILE lv_dropdown.o
+lv_dropdown_add_option <= USED 0
+lv_dropdown_clear_options <= USED 0
+lv_dropdown_close <= USED 0
+lv_dropdown_create <= USED 0
+lv_dropdown_get_dir <= USED 0
+lv_dropdown_get_max_height <= USED 0
+lv_dropdown_get_option_cnt <= USED 0
+lv_dropdown_get_options <= USED 0
+lv_dropdown_get_selected <= USED 0
+lv_dropdown_get_selected_str <= USED 0
+lv_dropdown_get_show_selected <= USED 0
+lv_dropdown_get_symbol <= USED 0
+lv_dropdown_get_text <= USED 0
+lv_dropdown_open <= USED 0
+lv_dropdown_set_dir <= USED 0
+lv_dropdown_set_max_height <= USED 0
+lv_dropdown_set_options <= USED 0
+lv_dropdown_set_options_static <= USED 0
+lv_dropdown_set_selected <= USED 0
+lv_dropdown_set_show_selected <= USED 0
+lv_dropdown_set_symbol <= USED 0
+lv_dropdown_set_text <= USED 0
+;FILE lv_font.o
+;FILE lv_font_fmt_txt.o
+;FILE lv_gauge.o
+lv_gauge_create <= USED 0
+lv_gauge_get_label_count <= USED 0
+lv_gauge_get_needle_count <= USED 0
+lv_gauge_get_needle_img <= USED 0
+lv_gauge_get_needle_img_pivot_x <= USED 0
+lv_gauge_get_needle_img_pivot_y <= USED 0
+lv_gauge_get_value <= USED 0
+lv_gauge_set_formatter_cb <= USED 0
+lv_gauge_set_needle_count <= USED 0
+lv_gauge_set_needle_img <= USED 0
+lv_gauge_set_scale <= USED 0
+lv_gauge_set_value <= USED 0
+;FILE lv_gc.o
+_lv_gc_clear_roots <= USED 0
+;FILE lv_group.o
+lv_group_create <= USED 0
+lv_group_del <= USED 0
+lv_group_focus_freeze <= USED 0
+lv_group_get_click_focus <= USED 0
+lv_group_get_focus_cb <= USED 0
+lv_group_get_user_data <= USED 0
+lv_group_get_wrap <= USED 0
+lv_group_remove_all_objs <= USED 0
+lv_group_set_click_focus <= USED 0
+lv_group_set_focus_cb <= USED 0
+lv_group_set_refocus_policy <= USED 0
+lv_group_set_wrap <= USED 0
+;FILE lv_hal_disp.o
+lv_disp_drv_update <= USED 0
+lv_disp_flush_is_last <= USED 0
+lv_disp_get_antialiasing <= USED 0
+lv_disp_remove <= USED 0
+lv_disp_set_default <= USED 0
+;FILE lv_hal_indev.o
+lv_indev_drv_update <= USED 0
+;FILE lv_hal_tick.o
+;FILE lv_img.o
+lv_img_get_angle <= USED 0
+lv_img_get_antialias <= USED 0
+lv_img_get_file_name <= USED 0
+lv_img_get_offset_x <= USED 0
+lv_img_get_offset_y <= USED 0
+lv_img_get_pivot <= USED 0
+lv_img_get_src <= USED 0
+lv_img_get_zoom <= USED 0
+lv_img_set_antialias <= USED 0
+lv_img_set_auto_size <= USED 0
+lv_img_set_offset_x <= USED 0
+lv_img_set_offset_y <= USED 0
+lv_img_set_zoom <= USED 0
+;FILE lv_img_buf.o
+lv_img_buf_alloc <= USED 0
+lv_img_buf_free <= USED 0
+lv_img_buf_get_img_size <= USED 0
+lv_img_buf_set_palette <= USED 0
+lv_img_buf_set_px_alpha <= USED 0
+lv_img_buf_set_px_color <= USED 0
+;FILE lv_img_cache.o
+;FILE lv_img_decoder.o
+lv_img_decoder_delete <= USED 0
+lv_img_decoder_set_close_cb <= USED 0
+lv_img_decoder_set_info_cb <= USED 0
+lv_img_decoder_set_open_cb <= USED 0
+lv_img_decoder_set_read_line_cb <= USED 0
+;FILE lv_imgbtn.o
+lv_imgbtn_create <= USED 0
+lv_imgbtn_get_src <= USED 0
+lv_imgbtn_set_src <= USED 0
+lv_imgbtn_set_state <= USED 0
+lv_imgbtn_toggle <= USED 0
+;FILE lv_indev.o
+lv_indev_enable <= USED 0
+lv_indev_get_gesture_dir <= USED 0
+lv_indev_get_key <= USED 0
+lv_indev_get_read_task <= USED 0
+lv_indev_set_button_points <= USED 0
+lv_indev_set_cursor <= USED 0
+lv_indev_set_group <= USED 0
+lv_indev_wait_release <= USED 0
+;FILE lv_keyboard.o
+lv_keyboard_get_cursor_manage <= USED 0
+lv_keyboard_get_mode <= USED 0
+lv_keyboard_get_textarea <= USED 0
+lv_keyboard_set_ctrl_map <= USED 0
+lv_keyboard_set_cursor_manage <= USED 0
+lv_keyboard_set_map <= USED 0
+lv_keyboard_set_mode <= USED 0
+;FILE lv_label.o
+lv_label_cut_text <= USED 0
+lv_label_get_anim_speed <= USED 0
+lv_label_is_char_under_pos <= USED 0
+lv_label_set_anim_speed <= USED 0
+lv_label_set_text_sel_end <= USED 0
+lv_label_set_text_sel_start <= USED 0
+;FILE lv_led.o
+lv_led_create <= USED 0
+lv_led_get_bright <= USED 0
+lv_led_off <= USED 0
+lv_led_on <= USED 0
+lv_led_set_bright <= USED 0
+lv_led_toggle <= USED 0
+;FILE lv_line.o
+;FILE lv_linemeter.o
+lv_linemeter_create <= USED 0
+lv_linemeter_draw_scale <= USED 0
+lv_linemeter_get_angle_offset <= USED 0
+lv_linemeter_get_line_count <= USED 0
+lv_linemeter_get_max_value <= USED 0
+lv_linemeter_get_min_value <= USED 0
+lv_linemeter_get_mirror <= USED 0
+lv_linemeter_get_scale_angle <= USED 0
+lv_linemeter_get_value <= USED 0
+lv_linemeter_set_angle_offset <= USED 0
+lv_linemeter_set_mirror <= USED 0
+lv_linemeter_set_range <= USED 0
+lv_linemeter_set_scale <= USED 0
+lv_linemeter_set_value <= USED 0
+;FILE lv_list.o
+lv_list_add_btn <= USED 0
+lv_list_clean <= USED 0
+lv_list_create <= USED 0
+lv_list_down <= USED 0
+lv_list_focus <= USED 0
+lv_list_focus_btn <= USED 0
+lv_list_get_btn_img <= USED 0
+lv_list_get_btn_index <= USED 0
+lv_list_get_btn_label <= USED 0
+lv_list_get_btn_selected <= USED 0
+lv_list_get_btn_text <= USED 0
+lv_list_get_layout <= USED 0
+lv_list_get_next_btn <= USED 0
+lv_list_get_prev_btn <= USED 0
+lv_list_get_size <= USED 0
+lv_list_remove <= USED 0
+lv_list_set_layout <= USED 0
+lv_list_up <= USED 0
+;FILE lv_ll.o
+_lv_ll_clear <= USED 0
+_lv_ll_get_len <= USED 0
+;FILE lv_mainstart.o
+;FILE lv_math.o
+_lv_atan2 <= USED 0
+_lv_bezier3 <= USED 0
+_lv_map <= USED 0
+_lv_pow <= USED 0
+;FILE lv_mem.o
+_lv_mem_deinit <= USED 0
+lv_mem_monitor <= USED 0
+lv_mem_test <= USED 0
+;FILE lv_msgbox.o
+lv_msgbox_add_btns <= USED 0
+lv_msgbox_create <= USED 0
+lv_msgbox_get_active_btn <= USED 0
+lv_msgbox_get_active_btn_text <= USED 0
+lv_msgbox_get_anim_time <= USED 0
+lv_msgbox_get_btnmatrix <= USED 0
+lv_msgbox_get_recolor <= USED 0
+lv_msgbox_get_text <= USED 0
+lv_msgbox_set_anim_time <= USED 0
+lv_msgbox_set_recolor <= USED 0
+lv_msgbox_set_text <= USED 0
+lv_msgbox_set_text_fmt <= USED 0
+lv_msgbox_start_auto_close <= USED 0
+lv_msgbox_stop_auto_close <= USED 0
+;FILE lv_obj.o
+_lv_obj_set_style_local_ptr <= USED 0
+lv_debug_check_obj_type <= USED 0
+lv_debug_check_obj_valid <= USED 0
+lv_deinit <= USED 0
+lv_event_send_refresh <= USED 0
+lv_event_send_refresh_recursive <= USED 0
+lv_obj_align_mid_x <= USED 0
+lv_obj_align_mid_y <= USED 0
+lv_obj_align_x <= USED 0
+lv_obj_align_y <= USED 0
+lv_obj_clean <= USED 0
+lv_obj_count_children <= USED 0
+lv_obj_count_children_recursive <= USED 0
+lv_obj_del_anim_ready_cb <= USED 0
+lv_obj_del_async <= USED 0
+lv_obj_fade_in <= USED 0
+lv_obj_fade_out <= USED 0
+lv_obj_finish_transitions <= USED 0
+lv_obj_get_adv_hittest <= USED 0
+lv_obj_get_event_cb <= USED 0
+lv_obj_get_ext_click_pad_bottom <= USED 0
+lv_obj_get_ext_click_pad_left <= USED 0
+lv_obj_get_ext_click_pad_right <= USED 0
+lv_obj_get_ext_click_pad_top <= USED 0
+lv_obj_get_ext_draw_pad <= USED 0
+lv_obj_get_focus_parent <= USED 0
+lv_obj_get_height_grid <= USED 0
+lv_obj_get_height_margin <= USED 0
+lv_obj_get_inner_coords <= USED 0
+lv_obj_get_parent_event <= USED 0
+lv_obj_get_protect <= USED 0
+lv_obj_get_top <= USED 0
+lv_obj_get_type <= USED 0
+lv_obj_get_user_data_ptr <= USED 0
+lv_obj_get_width_grid <= USED 0
+lv_obj_get_width_margin <= USED 0
+lv_obj_is_visible <= USED 0
+lv_obj_move_background <= USED 0
+lv_obj_remove_style <= USED 0
+lv_obj_remove_style_local_prop <= USED 0
+lv_obj_set_auto_realign <= USED 0
+lv_obj_set_gesture_parent <= USED 0
+lv_obj_set_height_fit <= USED 0
+lv_obj_set_height_margin <= USED 0
+lv_obj_set_parent_event <= USED 0
+lv_obj_set_top <= USED 0
+lv_obj_set_width_fit <= USED 0
+lv_obj_set_width_margin <= USED 0
+;FILE lv_objmask.o
+lv_objmask_add_mask <= USED 0
+lv_objmask_create <= USED 0
+lv_objmask_remove_mask <= USED 0
+lv_objmask_update_mask <= USED 0
+;FILE lv_page.o
+lv_page_clean <= USED 0
+lv_page_focus <= USED 0
+lv_page_get_height_fit <= USED 0
+lv_page_get_height_grid <= USED 0
+lv_page_get_scroll_propagation <= USED 0
+lv_page_get_scrollbar_mode <= USED 0
+lv_page_get_width_grid <= USED 0
+lv_page_glue_obj <= USED 0
+lv_page_set_anim_time <= USED 0
+;FILE lv_port_disp.o
+;FILE lv_port_indev.o
+;FILE lv_printf.o
+lv_snprintf <= USED 0
+;FILE lv_qrcode.o
+lv_qrcode_create <= USED 0
+lv_qrcode_delete <= USED 0
+lv_qrcode_update <= USED 0
+;FILE lv_refr.o
+_lv_refr_set_disp_refreshing <= USED 0
+lv_refr_get_fps_avg <= USED 0
+lv_refr_now <= USED 0
+;FILE lv_roller.o
+lv_roller_create <= USED 0
+lv_roller_get_align <= USED 0
+lv_roller_get_auto_fit <= USED 0
+lv_roller_get_option_cnt <= USED 0
+lv_roller_get_options <= USED 0
+lv_roller_get_selected <= USED 0
+lv_roller_get_selected_str <= USED 0
+lv_roller_set_align <= USED 0
+lv_roller_set_auto_fit <= USED 0
+lv_roller_set_options <= USED 0
+lv_roller_set_selected <= USED 0
+lv_roller_set_visible_row_count <= USED 0
+;FILE lv_slider.o
+lv_slider_is_dragged <= USED 0
+;FILE lv_spinbox.o
+lv_spinbox_create <= USED 0
+lv_spinbox_decrement <= USED 0
+lv_spinbox_get_rollover <= USED 0
+lv_spinbox_get_value <= USED 0
+lv_spinbox_increment <= USED 0
+lv_spinbox_set_digit_format <= USED 0
+lv_spinbox_set_padding_left <= USED 0
+lv_spinbox_set_range <= USED 0
+lv_spinbox_set_rollover <= USED 0
+lv_spinbox_set_step <= USED 0
+lv_spinbox_set_value <= USED 0
+lv_spinbox_step_next <= USED 0
+lv_spinbox_step_prev <= USED 0
+;FILE lv_spinner.o
+lv_spinner_anim_cb <= USED 0
+lv_spinner_create <= USED 0
+lv_spinner_get_arc_length <= USED 0
+lv_spinner_get_dir <= USED 0
+lv_spinner_get_spin_time <= USED 0
+lv_spinner_get_type <= USED 0
+lv_spinner_set_arc_length <= USED 0
+lv_spinner_set_dir <= USED 0
+lv_spinner_set_spin_time <= USED 0
+lv_spinner_set_type <= USED 0
+;FILE lv_style.o
+_lv_style_list_set_local_ptr <= USED 0
+lv_debug_check_style <= USED 0
+lv_debug_check_style_list <= USED 0
+;FILE lv_switch.o
+lv_switch_create <= USED 0
+lv_switch_off <= USED 0
+lv_switch_on <= USED 0
+lv_switch_toggle <= USED 0
+;FILE lv_table.o
+lv_table_create <= USED 0
+lv_table_get_cell_align <= USED 0
+lv_table_get_cell_crop <= USED 0
+lv_table_get_cell_merge_right <= USED 0
+lv_table_get_cell_type <= USED 0
+lv_table_get_cell_value <= USED 0
+lv_table_get_col_cnt <= USED 0
+lv_table_get_col_width <= USED 0
+lv_table_get_pressed_cell <= USED 0
+lv_table_get_row_cnt <= USED 0
+lv_table_set_cell_align <= USED 0
+lv_table_set_cell_crop <= USED 0
+lv_table_set_cell_merge_right <= USED 0
+lv_table_set_cell_type <= USED 0
+lv_table_set_cell_value <= USED 0
+lv_table_set_cell_value_fmt <= USED 0
+lv_table_set_col_cnt <= USED 0
+lv_table_set_col_width <= USED 0
+lv_table_set_row_cnt <= USED 0
+;FILE lv_tabview.o
+lv_tabview_clean_tab <= USED 0
+lv_tabview_get_btns_pos <= USED 0
+lv_tabview_get_tab_count <= USED 0
+lv_tabview_set_anim_time <= USED 0
+lv_tabview_set_btns_pos <= USED 0
+lv_tabview_set_tab_name <= USED 0
+;FILE lv_task.o
+lv_task_enable <= USED 0
+lv_task_get_next <= USED 0
+lv_task_reset <= USED 0
+lv_task_set_cb <= USED 0
+lv_task_set_period <= USED 0
+lv_task_set_repeat_count <= USED 0
+;FILE lv_textarea.o
+lv_textarea_create <= USED 0
+lv_textarea_get_cursor_blink_time <= USED 0
+lv_textarea_get_cursor_click_pos <= USED 0
+lv_textarea_get_cursor_hidden <= USED 0
+lv_textarea_get_label <= USED 0
+lv_textarea_get_placeholder_text <= USED 0
+lv_textarea_get_pwd_mode <= USED 0
+lv_textarea_get_pwd_show_time <= USED 0
+lv_textarea_get_text_sel_en <= USED 0
+lv_textarea_set_accepted_chars <= USED 0
+lv_textarea_set_cursor_blink_time <= USED 0
+lv_textarea_set_cursor_click_pos <= USED 0
+lv_textarea_set_insert_replace <= USED 0
+lv_textarea_set_max_length <= USED 0
+lv_textarea_set_one_line <= USED 0
+lv_textarea_set_placeholder_text <= USED 0
+lv_textarea_set_pwd_mode <= USED 0
+lv_textarea_set_pwd_show_time <= USED 0
+lv_textarea_set_text <= USED 0
+lv_textarea_set_text_align <= USED 0
+lv_textarea_set_text_sel <= USED 0
+lv_textarea_text_is_selected <= USED 0
+;FILE lv_theme.o
+lv_theme_copy <= USED 0
+lv_theme_get_act <= USED 0
+lv_theme_get_color_primary <= USED 0
+lv_theme_get_color_secondary <= USED 0
+lv_theme_get_flags <= USED 0
+lv_theme_get_font_small <= USED 0
+lv_theme_get_font_subtitle <= USED 0
+lv_theme_get_font_title <= USED 0
+lv_theme_set_apply_cb <= USED 0
+lv_theme_set_base <= USED 0
+;FILE lv_theme_empty.o
+lv_theme_empty_init <= USED 0
+;FILE lv_theme_material.o
+;FILE lv_theme_mono.o
+lv_theme_mono_init <= USED 0
+;FILE lv_theme_template.o
+lv_theme_template_init <= USED 0
+;FILE lv_tileview.o
+lv_tileview_add_element <= USED 0
+lv_tileview_create <= USED 0
+lv_tileview_get_tile_act <= USED 0
+lv_tileview_set_tile_act <= USED 0
+lv_tileview_set_valid_positions <= USED 0
+;FILE lv_txt.o
+;FILE lv_utils.o
+_lv_utils_num_to_str <= USED 0
+;FILE lv_win.o
+lv_win_add_btn_left <= USED 0
+lv_win_add_btn_right <= USED 0
+lv_win_clean <= USED 0
+lv_win_close_event_cb <= USED 0
+lv_win_create <= USED 0
+lv_win_focus <= USED 0
+lv_win_get_anim_time <= USED 0
+lv_win_get_btn_width <= USED 0
+lv_win_get_content <= USED 0
+lv_win_get_from_btn <= USED 0
+lv_win_get_header_height <= USED 0
+lv_win_get_layout <= USED 0
+lv_win_get_sb_mode <= USED 0
+lv_win_get_title <= USED 0
+lv_win_get_width <= USED 0
+lv_win_set_anim_time <= USED 0
+lv_win_set_btn_width <= USED 0
+lv_win_set_content_size <= USED 0
+lv_win_set_drag <= USED 0
+lv_win_set_header_height <= USED 0
+lv_win_set_layout <= USED 0
+lv_win_set_scrollbar_mode <= USED 0
+lv_win_set_title <= USED 0
+;FILE main.o
+;FILE misc.o
+NVIC_SetVectorTable <= USED 0
+NVIC_SystemLPConfig <= USED 0
+;FILE myiic.o
+;FILE ott2001a.o
+;FILE qrcodegen.o
+qrcodegen_calcSegmentBufferSize <= USED 0
+qrcodegen_encodeBinary <= USED 0
+qrcodegen_encodeSegments <= USED 0
+qrcodegen_encodeSegmentsAdvanced <= USED 0
+qrcodegen_encodeText <= USED 0
+qrcodegen_getModule <= USED 0
+qrcodegen_getSize <= USED 0
+qrcodegen_isAlphanumeric <= USED 0
+qrcodegen_isNumeric <= USED 0
+qrcodegen_makeAlphanumeric <= USED 0
+qrcodegen_makeBytes <= USED 0
+qrcodegen_makeEci <= USED 0
+qrcodegen_makeNumeric <= USED 0
+;FILE segger_rtt.o
+SEGGER_RTT_AllocDownBuffer <= USED 0
+SEGGER_RTT_AllocUpBuffer <= USED 0
+SEGGER_RTT_ConfigDownBuffer <= USED 0
+SEGGER_RTT_ConfigUpBuffer <= USED 0
+SEGGER_RTT_GetAvailWriteSpace <= USED 0
+SEGGER_RTT_GetBytesInBuffer <= USED 0
+SEGGER_RTT_GetKey <= USED 0
+SEGGER_RTT_HasData <= USED 0
+SEGGER_RTT_HasDataUp <= USED 0
+SEGGER_RTT_HasKey <= USED 0
+SEGGER_RTT_Init <= USED 0
+SEGGER_RTT_PutChar <= USED 0
+SEGGER_RTT_PutCharSkip <= USED 0
+SEGGER_RTT_PutCharSkipNoLock <= USED 0
+SEGGER_RTT_Read <= USED 0
+SEGGER_RTT_ReadNoLock <= USED 0
+SEGGER_RTT_ReadUpBuffer <= USED 0
+SEGGER_RTT_ReadUpBufferNoLock <= USED 0
+SEGGER_RTT_SetFlagsDownBuffer <= USED 0
+SEGGER_RTT_SetFlagsUpBuffer <= USED 0
+SEGGER_RTT_SetNameDownBuffer <= USED 0
+SEGGER_RTT_SetNameUpBuffer <= USED 0
+SEGGER_RTT_SetTerminal <= USED 0
+SEGGER_RTT_TerminalOut <= USED 0
+SEGGER_RTT_WaitKey <= USED 0
+SEGGER_RTT_WriteDownBuffer <= USED 0
+SEGGER_RTT_WriteDownBufferNoLock <= USED 0
+SEGGER_RTT_WriteSkipNoLock <= USED 0
+SEGGER_RTT_WriteString <= USED 0
+SEGGER_RTT_WriteWithOverwriteNoLock <= USED 0
+;FILE segger_rtt_printf.o
+;FILE setup_scr_screen.o
+;FILE spi.o
+SPI2_Init <= USED 0
+SPI2_ReadWriteByte <= USED 0
+SPI2_SetSpeed <= USED 0
+;FILE sram.o
+FSMC_SRAM_ReadBuffer <= USED 0
+FSMC_SRAM_WriteBuffer <= USED 0
+fsmc_sram_test_read <= USED 0
+fsmc_sram_test_write <= USED 0
+;FILE startup_stm32f10x_hd.o
+;FILE stm32f10x_fsmc.o
+FSMC_ClearFlag <= USED 0
+FSMC_ClearITPendingBit <= USED 0
+FSMC_GetECC <= USED 0
+FSMC_GetFlagStatus <= USED 0
+FSMC_GetITStatus <= USED 0
+FSMC_ITConfig <= USED 0
+FSMC_NANDCmd <= USED 0
+FSMC_NANDDeInit <= USED 0
+FSMC_NANDECCCmd <= USED 0
+FSMC_NANDInit <= USED 0
+FSMC_NANDStructInit <= USED 0
+FSMC_NORSRAMDeInit <= USED 0
+FSMC_NORSRAMStructInit <= USED 0
+FSMC_PCCARDCmd <= USED 0
+FSMC_PCCARDDeInit <= USED 0
+FSMC_PCCARDInit <= USED 0
+FSMC_PCCARDStructInit <= USED 0
+;FILE stm32f10x_gpio.o
+GPIO_AFIODeInit <= USED 0
+GPIO_DeInit <= USED 0
+GPIO_ETH_MediaInterfaceConfig <= USED 0
+GPIO_EXTILineConfig <= USED 0
+GPIO_EventOutputCmd <= USED 0
+GPIO_EventOutputConfig <= USED 0
+GPIO_PinLockConfig <= USED 0
+GPIO_PinRemapConfig <= USED 0
+GPIO_ReadInputData <= USED 0
+GPIO_ReadOutputData <= USED 0
+GPIO_ReadOutputDataBit <= USED 0
+GPIO_StructInit <= USED 0
+GPIO_Write <= USED 0
+GPIO_WriteBit <= USED 0
+;FILE stm32f10x_it.o
+;FILE stm32f10x_rcc.o
+RCC_ADCCLKConfig <= USED 0
+RCC_APB1PeriphResetCmd <= USED 0
+RCC_APB2PeriphResetCmd <= USED 0
+RCC_AdjustHSICalibrationValue <= USED 0
+RCC_BackupResetCmd <= USED 0
+RCC_ClearFlag <= USED 0
+RCC_ClearITPendingBit <= USED 0
+RCC_ClockSecuritySystemCmd <= USED 0
+RCC_DeInit <= USED 0
+RCC_GetFlagStatus <= USED 0
+RCC_GetITStatus <= USED 0
+RCC_GetSYSCLKSource <= USED 0
+RCC_HCLKConfig <= USED 0
+RCC_HSEConfig <= USED 0
+RCC_HSICmd <= USED 0
+RCC_ITConfig <= USED 0
+RCC_LSEConfig <= USED 0
+RCC_LSICmd <= USED 0
+RCC_MCOConfig <= USED 0
+RCC_PCLK1Config <= USED 0
+RCC_PCLK2Config <= USED 0
+RCC_PLLCmd <= USED 0
+RCC_PLLConfig <= USED 0
+RCC_RTCCLKCmd <= USED 0
+RCC_RTCCLKConfig <= USED 0
+RCC_SYSCLKConfig <= USED 0
+RCC_USBCLKConfig <= USED 0
+RCC_WaitForHSEStartUp <= USED 0
+;FILE stm32f10x_spi.o
+I2S_Cmd <= USED 0
+I2S_Init <= USED 0
+I2S_StructInit <= USED 0
+SPI_BiDirectionalLineConfig <= USED 0
+SPI_CalculateCRC <= USED 0
+SPI_Cmd <= USED 0
+SPI_DataSizeConfig <= USED 0
+SPI_GetCRC <= USED 0
+SPI_GetCRCPolynomial <= USED 0
+SPI_I2S_ClearFlag <= USED 0
+SPI_I2S_ClearITPendingBit <= USED 0
+SPI_I2S_DMACmd <= USED 0
+SPI_I2S_DeInit <= USED 0
+SPI_I2S_GetFlagStatus <= USED 0
+SPI_I2S_GetITStatus <= USED 0
+SPI_I2S_ITConfig <= USED 0
+SPI_I2S_ReceiveData <= USED 0
+SPI_I2S_SendData <= USED 0
+SPI_Init <= USED 0
+SPI_NSSInternalSoftwareConfig <= USED 0
+SPI_SSOutputCmd <= USED 0
+SPI_StructInit <= USED 0
+SPI_TransmitCRC <= USED 0
+;FILE stm32f10x_tim.o
+TIM_ARRPreloadConfig <= USED 0
+TIM_BDTRConfig <= USED 0
+TIM_BDTRStructInit <= USED 0
+TIM_CCPreloadControl <= USED 0
+TIM_CCxCmd <= USED 0
+TIM_CCxNCmd <= USED 0
+TIM_ClearFlag <= USED 0
+TIM_ClearITPendingBit <= USED 0
+TIM_ClearOC1Ref <= USED 0
+TIM_ClearOC2Ref <= USED 0
+TIM_ClearOC3Ref <= USED 0
+TIM_ClearOC4Ref <= USED 0
+TIM_CounterModeConfig <= USED 0
+TIM_CtrlPWMOutputs <= USED 0
+TIM_DMACmd <= USED 0
+TIM_DMAConfig <= USED 0
+TIM_DeInit <= USED 0
+TIM_ETRClockMode1Config <= USED 0
+TIM_ETRClockMode2Config <= USED 0
+TIM_ETRConfig <= USED 0
+TIM_EncoderInterfaceConfig <= USED 0
+TIM_ForcedOC1Config <= USED 0
+TIM_ForcedOC2Config <= USED 0
+TIM_ForcedOC3Config <= USED 0
+TIM_ForcedOC4Config <= USED 0
+TIM_GenerateEvent <= USED 0
+TIM_GetCapture1 <= USED 0
+TIM_GetCapture2 <= USED 0
+TIM_GetCapture3 <= USED 0
+TIM_GetCapture4 <= USED 0
+TIM_GetCounter <= USED 0
+TIM_GetFlagStatus <= USED 0
+TIM_GetITStatus <= USED 0
+TIM_GetPrescaler <= USED 0
+TIM_ICInit <= USED 0
+TIM_ICStructInit <= USED 0
+TIM_ITRxExternalClockConfig <= USED 0
+TIM_InternalClockConfig <= USED 0
+TIM_OC1FastConfig <= USED 0
+TIM_OC1Init <= USED 0
+TIM_OC1NPolarityConfig <= USED 0
+TIM_OC1PolarityConfig <= USED 0
+TIM_OC1PreloadConfig <= USED 0
+TIM_OC2FastConfig <= USED 0
+TIM_OC2Init <= USED 0
+TIM_OC2NPolarityConfig <= USED 0
+TIM_OC2PolarityConfig <= USED 0
+TIM_OC2PreloadConfig <= USED 0
+TIM_OC3FastConfig <= USED 0
+TIM_OC3Init <= USED 0
+TIM_OC3NPolarityConfig <= USED 0
+TIM_OC3PolarityConfig <= USED 0
+TIM_OC3PreloadConfig <= USED 0
+TIM_OC4FastConfig <= USED 0
+TIM_OC4Init <= USED 0
+TIM_OC4PolarityConfig <= USED 0
+TIM_OC4PreloadConfig <= USED 0
+TIM_OCStructInit <= USED 0
+TIM_PWMIConfig <= USED 0
+TIM_PrescalerConfig <= USED 0
+TIM_SelectCCDMA <= USED 0
+TIM_SelectCOM <= USED 0
+TIM_SelectHallSensor <= USED 0
+TIM_SelectInputTrigger <= USED 0
+TIM_SelectMasterSlaveMode <= USED 0
+TIM_SelectOCxM <= USED 0
+TIM_SelectOnePulseMode <= USED 0
+TIM_SelectOutputTrigger <= USED 0
+TIM_SelectSlaveMode <= USED 0
+TIM_SetAutoreload <= USED 0
+TIM_SetClockDivision <= USED 0
+TIM_SetCompare1 <= USED 0
+TIM_SetCompare2 <= USED 0
+TIM_SetCompare3 <= USED 0
+TIM_SetCompare4 <= USED 0
+TIM_SetCounter <= USED 0
+TIM_SetIC1Prescaler <= USED 0
+TIM_SetIC2Prescaler <= USED 0
+TIM_SetIC3Prescaler <= USED 0
+TIM_SetIC4Prescaler <= USED 0
+TIM_TIxExternalClockConfig <= USED 0
+TIM_TimeBaseStructInit <= USED 0
+TIM_UpdateDisableConfig <= USED 0
+TIM_UpdateRequestConfig <= USED 0
+;FILE stm32f10x_usart.o
+USART_ClearFlag <= USED 0
+USART_ClearITPendingBit <= USED 0
+USART_ClockInit <= USED 0
+USART_ClockStructInit <= USED 0
+USART_DMACmd <= USED 0
+USART_DeInit <= USED 0
+USART_HalfDuplexCmd <= USED 0
+USART_IrDACmd <= USED 0
+USART_IrDAConfig <= USED 0
+USART_LINBreakDetectLengthConfig <= USED 0
+USART_LINCmd <= USED 0
+USART_OneBitMethodCmd <= USED 0
+USART_OverSampling8Cmd <= USED 0
+USART_ReceiverWakeUpCmd <= USED 0
+USART_SendBreak <= USED 0
+USART_SetAddress <= USED 0
+USART_SetGuardTime <= USED 0
+USART_SetPrescaler <= USED 0
+USART_SmartCardCmd <= USED 0
+USART_SmartCardNACKCmd <= USED 0
+USART_StructInit <= USED 0
+USART_WakeUpConfig <= USED 0
+;FILE sys.o
+INTX_DISABLE <= USED 0
+INTX_ENABLE <= USED 0
+MSR_MSP <= USED 0
+WFI_SET <= USED 0
+;FILE system_stm32f10x.o
+SystemCoreClockUpdate <= USED 0
+;FILE timer.o
+;FILE touch.o
+TP_Draw_Big_Point <= USED 0
+;FILE usart.o
+USART_Pow <= USED 0
+USART_SendNumber <= USED 0
+USART_SendString <= USED 0
+_sys_exit <= USED 0
+;FILE w25qxx.o
+W25QXX_Erase_Chip <= USED 0
+W25QXX_Erase_Sector <= USED 0
+W25QXX_Init <= USED 0
+W25QXX_PowerDown <= USED 0
+W25QXX_Read <= USED 0
+W25QXX_ReadID <= USED 0
+W25QXX_ReadSR <= USED 0
+W25QXX_WAKEUP <= USED 0
+W25QXX_Wait_Busy <= USED 0
+W25QXX_Write <= USED 0
+W25QXX_Write_Disable <= USED 0
+W25QXX_Write_Enable <= USED 0
+W25QXX_Write_NoCheck <= USED 0
+W25QXX_Write_Page <= USED 0
+W25QXX_Write_SR <= USED 0

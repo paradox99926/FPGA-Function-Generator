@@ -25,9 +25,11 @@ extern "C"
         bool Squ_Channel_2;
         bool Tri_Channel_1;
         bool Tri_Channel_2;
-    } Btn_Sel = {0, 0, 0, 0, 0, 0};
+        bool Cus_Channel_1;
+        bool Cus_Channel_2;
+    } Btn_Sel = {0, 0, 0, 0, 0, 0, 0, 0};
 
-    void Set_State();
+    void Set_State(void);
     void custom_init(lv_ui *ui);
 
 #ifdef __cplusplus
